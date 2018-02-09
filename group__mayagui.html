@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">AL_USDMaya
-   &#160;<span id="projectnumber">0.26.a</span>
+   &#160;<span id="projectnumber">0.26.0</span>
    </div>
    <div id="projectbrief">USD to Maya Bridge</div>
   </td>
@@ -134,9 +134,9 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:gacd3da57d11633aff3c79151b04e344be"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mayagui.html#gacd3da57d11633aff3c79151b04e344be">AL_DECL_ATTRIBUTE</a>(XX)</td></tr>
-<tr class="memdesc:gacd3da57d11633aff3c79151b04e344be"><td class="mdescLeft">&#160;</td><td class="mdescRight">This macro simply adds an MObject member variable to an MPxNode derived class to be used as a node attribute. It also add's a couple of public methods to access a nodes plug, and to access the attributes MObject. For example, if my node looked like:  <a href="#gacd3da57d11633aff3c79151b04e344be">More...</a><br /></td></tr>
-<tr class="separator:gacd3da57d11633aff3c79151b04e344be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8351ddcc91c6c720b53b4aa57ad9261f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mayagui.html#ga8351ddcc91c6c720b53b4aa57ad9261f">AL_DECL_MULTI_CHILD_ATTRIBUTE</a>(XX)</td></tr>
+<tr class="memdesc:ga8351ddcc91c6c720b53b4aa57ad9261f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This macro simply adds an MObject member variable to an MPxNode derived class to be used as a node attribute. It also add's a couple of public methods to access a nodes plug, and to access the attributes MObject. For example, if my node looked like:  <a href="#ga8351ddcc91c6c720b53b4aa57ad9261f">More...</a><br /></td></tr>
+<tr class="separator:ga8351ddcc91c6c720b53b4aa57ad9261f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>These are a series of classes and functions to help automate a lot of the boiler plate GUI code that is often needed for a Maya plug-in. The classes fall into two main categories</p><ol type="1">
@@ -145,12 +145,12 @@ Macros</h2></td></tr>
 <li>SIMD optimized methods for extracting data from core Maya API classes. </li>
 </ol>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="gacd3da57d11633aff3c79151b04e344be"></a>
+<a class="anchor" id="ga8351ddcc91c6c720b53b4aa57ad9261f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define AL_DECL_ATTRIBUTE</td>
+          <td class="memname">#define AL_DECL_MULTI_CHILD_ATTRIBUTE</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">XX</td><td>)</td>
@@ -161,14 +161,13 @@ Macros</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line"><span class="keyword">private</span>: \</div>
 <div class="line">  static MObject m_##XX; \</div>
 <div class="line">  public: \</div>
-<div class="line">  MPlug XX##Plug()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> MPlug( thisMObject(), m_##XX ); } \</div>
 <div class="line">  static <span class="keyword">const</span> MObject&amp; XX () { <span class="keywordflow">return</span> m_##XX; }</div>
 </div><!-- fragment -->
 <p>This macro simply adds an MObject member variable to an MPxNode derived class to be used as a node attribute. It also add's a couple of public methods to access a nodes plug, and to access the attributes MObject. For example, if my node looked like: </p>
 <div class="fragment"><div class="line"><span class="keyword">class </span>MyNode</div>
 <div class="line">  : <span class="keyword">public</span> MPxNode</div>
 <div class="line">{</div>
-<div class="line">  <a class="code" href="group__mayagui.html#gacd3da57d11633aff3c79151b04e344be">AL_DECL_ATTRIBUTE</a>(myAttr);</div>
+<div class="line">  AL_DECL_ATTRIBUTE(myAttr);</div>
 <div class="line">};</div>
 </div><!-- fragment --><p> This would effectively expand to: </p><div class="fragment"><div class="line"><span class="keyword">class </span>MyNode</div>
 <div class="line">  : <span class="keyword">public</span> MPxNode</div>
@@ -192,7 +191,7 @@ Macros</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Jan 16 2018 16:47:27 for AL_USDMaya by
+    <li class="footer">Generated on Fri Feb 9 2018 18:12:36 for AL_USDMaya by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">AL_USDMaya
-   &#160;<span id="projectnumber">0.26.a</span>
+   &#160;<span id="projectnumber">0.26.0</span>
    </div>
    <div id="projectbrief">USD to Maya Bridge</div>
   </td>
@@ -131,23 +131,23 @@ $(document).ready(function(){initNavTree('SelectabilityDB_8h_source.html','');})
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
 <div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classAL_1_1usdmaya_1_1SelectabilityDB.html#a8713635afaac230488c0aeffaf5f8a5b">   40</a></span>&#160;  <span class="keyword">inline</span> <span class="keyword">const</span> SdfPathVector&amp; <a class="code" href="classAL_1_1usdmaya_1_1SelectabilityDB.html#a8713635afaac230488c0aeffaf5f8a5b">getUnselectablePaths</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_unselectablePaths; }</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classAL_1_1usdmaya_1_1SelectabilityDB.html#aa94cc07a471d0cc354166ffd45099e03">removePathsAsUnselectable</a>(<span class="keyword">const</span> SdfPathVector&amp; paths);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classAL_1_1usdmaya_1_1SelectabilityDB.html#a5f5729bae4c2a1c01da989a3f891f814">removePathAsUnselectable</a>(<span class="keyword">const</span> SdfPath&amp; path);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keyword">inline</span> <span class="keywordtype">void</span> sort(){std::sort(m_unselectablePaths.begin(), m_unselectablePaths.end());}</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keywordtype">bool</span> addUnselectablePath(<span class="keyword">const</span> SdfPath&amp; path);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordtype">bool</span> removeUnselectablePath(<span class="keyword">const</span> SdfPath&amp; path);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  SdfPathVector m_unselectablePaths;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;};</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">//----------------------------------------------------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;} <span class="comment">// usdmaya</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;} <span class="comment">// AL</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">//----------------------------------------------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classAL_1_1usdmaya_1_1SelectabilityDB.html#aa94cc07a471d0cc354166ffd45099e03">removePathsAsUnselectable</a>(<span class="keyword">const</span> SdfPathVector&amp; paths);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classAL_1_1usdmaya_1_1SelectabilityDB.html#a5f5729bae4c2a1c01da989a3f891f814">removePathAsUnselectable</a>(<span class="keyword">const</span> SdfPath&amp; path);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keyword">inline</span> <span class="keywordtype">void</span> sort(){std::sort(m_unselectablePaths.begin(), m_unselectablePaths.end());}</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordtype">bool</span> addUnselectablePath(<span class="keyword">const</span> SdfPath&amp; path);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keywordtype">bool</span> removeUnselectablePath(<span class="keyword">const</span> SdfPath&amp; path);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  SdfPathVector m_unselectablePaths;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;};</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">//----------------------------------------------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;} <span class="comment">// usdmaya</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;} <span class="comment">// AL</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment">//----------------------------------------------------------------------------------------------------------------------</span></div>
 <div class="ttc" id="classAL_1_1usdmaya_1_1SelectabilityDB_html_a6be626a798153e37e750826b4f134c24"><div class="ttname"><a href="classAL_1_1usdmaya_1_1SelectabilityDB.html#a6be626a798153e37e750826b4f134c24">AL::usdmaya::SelectabilityDB::isPathUnselectable</a></div><div class="ttdeci">bool isPathUnselectable(const SdfPath &amp;path) const </div><div class="ttdoc">Determines this path is unselectable. </div></div>
 <div class="ttc" id="classAL_1_1usdmaya_1_1SelectabilityDB_html_af61d693808ef57cecdd475fa3047e30d"><div class="ttname"><a href="classAL_1_1usdmaya_1_1SelectabilityDB.html#af61d693808ef57cecdd475fa3047e30d">AL::usdmaya::SelectabilityDB::addPathsAsUnselectable</a></div><div class="ttdeci">void addPathsAsUnselectable(const SdfPathVector &amp;paths)</div><div class="ttdoc">Adds a list of paths to the selectable list. </div></div>
 <div class="ttc" id="classAL_1_1usdmaya_1_1SelectabilityDB_html_a5f5729bae4c2a1c01da989a3f891f814"><div class="ttname"><a href="classAL_1_1usdmaya_1_1SelectabilityDB.html#a5f5729bae4c2a1c01da989a3f891f814">AL::usdmaya::SelectabilityDB::removePathAsUnselectable</a></div><div class="ttdeci">void removePathAsUnselectable(const SdfPath &amp;path)</div><div class="ttdoc">Remove a path from the selectable list if the exist. </div></div>
@@ -161,7 +161,7 @@ $(document).ready(function(){initNavTree('SelectabilityDB_8h_source.html','');})
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_c85d3e3c5052e9ad9ce18c6863244a25.html">lib</a></li><li class="navelem"><a class="el" href="dir_1bb7ef9dbabe305f6710c4d5a2d124d7.html">AL_USDMaya</a></li><li class="navelem"><a class="el" href="dir_1718e17ee0fed015a6dbff620e7e9f68.html">AL</a></li><li class="navelem"><a class="el" href="dir_bfd18ef9f7ca57c4b661440a6abf5ddf.html">usdmaya</a></li><li class="navelem"><b>SelectabilityDB.h</b></li>
-    <li class="footer">Generated on Tue Jan 16 2018 16:47:27 for AL_USDMaya by
+    <li class="footer">Generated on Fri Feb 9 2018 18:12:36 for AL_USDMaya by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

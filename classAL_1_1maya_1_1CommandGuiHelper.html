@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">AL_USDMaya
-   &#160;<span id="projectnumber">0.26.a</span>
+   &#160;<span id="projectnumber">0.26.0</span>
    </div>
    <div id="projectbrief">USD to Maya Bridge</div>
   </td>
@@ -151,6 +151,9 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAL_1_1maya_1_1CommandGuiHelper.html#a256543a66d55df09dd1c85544efc93f9">~CommandGuiHelper</a> ()</td></tr>
 <tr class="memdesc:a256543a66d55df09dd1c85544efc93f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">dtor - auto generates, and executes the GUI code. <br /></td></tr>
 <tr class="separator:a256543a66d55df09dd1c85544efc93f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65450c51c5b1658feb63393b8c29beb6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAL_1_1maya_1_1CommandGuiHelper.html#a65450c51c5b1658feb63393b8c29beb6">addExecuteText</a> (const char *toAdd)</td></tr>
+<tr class="memdesc:a65450c51c5b1658feb63393b8c29beb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">add some text to the execute command, unconditionally Useful if, ie, you always want to set a non-default command flag  <a href="#a65450c51c5b1658feb63393b8c29beb6">More...</a><br /></td></tr>
+<tr class="separator:a65450c51c5b1658feb63393b8c29beb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae69e24a378f82fb91c8ab4627cfd6798"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAL_1_1maya_1_1CommandGuiHelper.html#ae69e24a378f82fb91c8ab4627cfd6798">addFlagOption</a> (const char *commandFlag, const char *label, bool defaultVal, bool persist=true)</td></tr>
 <tr class="memdesc:ae69e24a378f82fb91c8ab4627cfd6798"><td class="mdescLeft">&#160;</td><td class="mdescRight">add a boolean option value to the GUI  <a href="#ae69e24a378f82fb91c8ab4627cfd6798">More...</a><br /></td></tr>
 <tr class="separator:ae69e24a378f82fb91c8ab4627cfd6798"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -181,9 +184,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a88705c2f16b917fd7426d87c6c21d338"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAL_1_1maya_1_1CommandGuiHelper.html#a88705c2f16b917fd7426d87c6c21d338">addInt4Option</a> (const char *commandFlag, const char *label, const int32_t a, const int32_t b, const int32_t c, const int32_t d, bool persist=true)</td></tr>
 <tr class="memdesc:a88705c2f16b917fd7426d87c6c21d338"><td class="mdescLeft">&#160;</td><td class="mdescRight">add a 4D integer option value to the GUI  <a href="#a88705c2f16b917fd7426d87c6c21d338">More...</a><br /></td></tr>
 <tr class="separator:a88705c2f16b917fd7426d87c6c21d338"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab652a44d36a5585d7c2b4359bc541783"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAL_1_1maya_1_1CommandGuiHelper.html#ab652a44d36a5585d7c2b4359bc541783">addListOption</a> (const char *commandFlag, const char *label, GenerateListFn generateList)</td></tr>
-<tr class="memdesc:ab652a44d36a5585d7c2b4359bc541783"><td class="mdescLeft">&#160;</td><td class="mdescRight">adds a dynamic drop down list of items that will be displayed within an optionMenu control. The list of text strings will be generated within C++ by the custom generateList function, which will then be chosen to represent the list of options available for this command. When the command is executed, the selected item will be passed to the command as a text string.  <a href="#ab652a44d36a5585d7c2b4359bc541783">More...</a><br /></td></tr>
-<tr class="separator:ab652a44d36a5585d7c2b4359bc541783"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cebfe39fc3d3819ff5c6a3894fffedb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAL_1_1maya_1_1CommandGuiHelper.html#a5cebfe39fc3d3819ff5c6a3894fffedb">addListOption</a> (const char *commandFlag, const char *label, GenerateListFn generateList, bool isMandatory=false)</td></tr>
+<tr class="memdesc:a5cebfe39fc3d3819ff5c6a3894fffedb"><td class="mdescLeft">&#160;</td><td class="mdescRight">adds a dynamic drop down list of items that will be displayed within an optionMenu control. The list of text strings will be generated within C++ by the custom generateList function, which will then be chosen to represent the list of options available for this command. When the command is executed, the selected item will be passed to the command as a text string.  <a href="#a5cebfe39fc3d3819ff5c6a3894fffedb">More...</a><br /></td></tr>
+<tr class="separator:a5cebfe39fc3d3819ff5c6a3894fffedb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8633fdc5271144da14fe186aef26c2a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAL_1_1maya_1_1CommandGuiHelper.html#a8633fdc5271144da14fe186aef26c2a3">addEnumOption</a> (const char *commandFlag, const char *label, int defaultIndex, const char *const enumNames[], const int32_t enumValues[], bool persist=true, bool passAsString=false)</td></tr>
 <tr class="memdesc:a8633fdc5271144da14fe186aef26c2a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">add an enum option value to the GUI  <a href="#a8633fdc5271144da14fe186aef26c2a3">More...</a><br /></td></tr>
 <tr class="separator:a8633fdc5271144da14fe186aef26c2a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -752,6 +755,30 @@ Public Member Functions</h2></td></tr>
     <tr><td class="paramname">enumValues</td><td>an array of integer values that match up to the enumNames. This array can be NULL, in which case it is assumed that the enum values are 0, 1, 2, 3, etc. </td></tr>
     <tr><td class="paramname">persist</td><td>if true, the GUI option will be persisted as an optionVar </td></tr>
     <tr><td class="paramname">passAsString</td><td>if true, the command will be passed the text string value of the enum. If false, a numeric value will be passed instead. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a65450c51c5b1658feb63393b8c29beb6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AL::maya::CommandGuiHelper::addExecuteText </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>toAdd</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>add some text to the execute command, unconditionally Useful if, ie, you always want to set a non-default command flag </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">toAdd</td><td>extra flags / text to add to the execution command </td></tr>
   </table>
   </dd>
 </dl>
@@ -1335,7 +1362,7 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ab652a44d36a5585d7c2b4359bc541783"></a>
+<a class="anchor" id="a5cebfe39fc3d3819ff5c6a3894fffedb"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1355,7 +1382,13 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">GenerateListFn&#160;</td>
-          <td class="paramname"><em>generateList</em>&#160;</td>
+          <td class="paramname"><em>generateList</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isMandatory</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1372,6 +1405,7 @@ Public Member Functions</h2></td></tr>
     <tr><td class="paramname">commandFlag</td><td>the flag for the command </td></tr>
     <tr><td class="paramname">label</td><td>human readable GUI label for the option </td></tr>
     <tr><td class="paramname">generateList</td><td>The C++ command to build up a list of text strings for the GUI to display </td></tr>
+    <tr><td class="paramname">isMandatory</td><td>If true, our commandFlag is actually a mandatory argument, not a option / flag </td></tr>
   </table>
   </dd>
 </dl>
@@ -1880,7 +1914,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceAL.html">AL</a></li><li class="navelem"><b>maya</b></li><li class="navelem"><a class="el" href="classAL_1_1maya_1_1CommandGuiHelper.html">CommandGuiHelper</a></li>
-    <li class="footer">Generated on Tue Jan 16 2018 16:47:27 for AL_USDMaya by
+    <li class="footer">Generated on Fri Feb 9 2018 18:12:37 for AL_USDMaya by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

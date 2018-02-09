@@ -1,8 +1,6 @@
 var classAL_1_1usdmaya_1_1nodes_1_1Layer =
 [
     [ "Layer", "classAL_1_1usdmaya_1_1nodes_1_1Layer.html#ae31a85443d6a6a0cb960052b13dbf12e", null ],
-    [ "addChildLayer", "classAL_1_1usdmaya_1_1nodes_1_1Layer.html#a08d36015450ac6d13ae2324133683ce0", null ],
-    [ "addSubLayer", "classAL_1_1usdmaya_1_1nodes_1_1Layer.html#aab8c4f822ebf41a4edf4cc6c6d7ed6e9", null ],
     [ "AL_DECL_ATTRIBUTE", "classAL_1_1usdmaya_1_1nodes_1_1Layer.html#a2ab9e04113df512e13a18863ecc7c604", null ],
     [ "AL_DECL_ATTRIBUTE", "classAL_1_1usdmaya_1_1nodes_1_1Layer.html#ac1f1108ff413df96bf1a23ee3c66e6d0", null ],
     [ "AL_DECL_ATTRIBUTE", "classAL_1_1usdmaya_1_1nodes_1_1Layer.html#a48b03982f2804a15d6caed4b2875b0b2", null ],
@@ -27,23 +25,5 @@ var classAL_1_1usdmaya_1_1nodes_1_1Layer =
     [ "AL_DECL_ATTRIBUTE", "classAL_1_1usdmaya_1_1nodes_1_1Layer.html#ae5a6b2e410ca2f922654900b9e540ab5", null ],
     [ "AL_DECL_ATTRIBUTE", "classAL_1_1usdmaya_1_1nodes_1_1Layer.html#ae44b37265fd99733cda1246e23d5b895", null ],
     [ "AL_DECL_ATTRIBUTE", "classAL_1_1usdmaya_1_1nodes_1_1Layer.html#a63f82dcfaf91e5cd734b7b0499819bc3", null ],
-    [ "AL_MAYA_DECLARE_NODE", "classAL_1_1usdmaya_1_1nodes_1_1Layer.html#a96c166deeb3094658b65df4e70900cd2", null ],
-    [ "buildSubLayers", "classAL_1_1usdmaya_1_1nodes_1_1Layer.html#a01b49a5d5800f5de661a0ab1b571c34e", null ],
-    [ "findChildLayer", "classAL_1_1usdmaya_1_1nodes_1_1Layer.html#a6cfcaf9b4cb593fcac92e8482deb5974", null ],
-    [ "findLayer", "classAL_1_1usdmaya_1_1nodes_1_1Layer.html#a87be7f6d692870184266c0af5780d2d0", null ],
-    [ "findSubLayer", "classAL_1_1usdmaya_1_1nodes_1_1Layer.html#ad21766023a3201d8ef05f1850c069cd9", null ],
-    [ "getChildLayers", "classAL_1_1usdmaya_1_1nodes_1_1Layer.html#a83c11c37768a22b49f31eb59cf1796f4", null ],
-    [ "getHandle", "classAL_1_1usdmaya_1_1nodes_1_1Layer.html#a3a318f580cf0016a7dd0e293f4f26c05", null ],
-    [ "getParentLayer", "classAL_1_1usdmaya_1_1nodes_1_1Layer.html#a122a949fb8c66f3cdbd0e96ceb00b7c8", null ],
-    [ "getProxyShape", "classAL_1_1usdmaya_1_1nodes_1_1Layer.html#a3149b1450f40762053fdb52b8aaa5686", null ],
-    [ "getSubLayers", "classAL_1_1usdmaya_1_1nodes_1_1Layer.html#a883ca86e47320c1c0394b352b88481bf", null ],
-    [ "hasBeenTheEditTarget", "classAL_1_1usdmaya_1_1nodes_1_1Layer.html#a37661be2f6f2f7556e2b528b38da626a", null ],
-    [ "init", "classAL_1_1usdmaya_1_1nodes_1_1Layer.html#adef492d0a8353d4c7ab4f8587bfe9913", null ],
-    [ "parentLayerPlug", "classAL_1_1usdmaya_1_1nodes_1_1Layer.html#a6d57eae96e020f90f61717cc3fd8e166", null ],
-    [ "populateSerialisationAttributes", "classAL_1_1usdmaya_1_1nodes_1_1Layer.html#a96a46683a1d382c6d864b9dc7ab245ed", null ],
-    [ "removeChildLayer", "classAL_1_1usdmaya_1_1nodes_1_1Layer.html#a9bbbcddb111685aad34112fc5372161d", null ],
-    [ "removeSubLayer", "classAL_1_1usdmaya_1_1nodes_1_1Layer.html#a188952c2781308447ab924621ba9c7a0", null ],
-    [ "setHasBeenTheEditTarget", "classAL_1_1usdmaya_1_1nodes_1_1Layer.html#ae21b4142efb68040f2db86dd3430d1ab", null ],
-    [ "setLayerAndClearAttribute", "classAL_1_1usdmaya_1_1nodes_1_1Layer.html#abb3716f8d728c4a5259d2cf01537de08", null ],
-    [ "testing_clearHandle", "classAL_1_1usdmaya_1_1nodes_1_1Layer.html#a8c52742e1160a0703b83677bd06fd731", null ]
+    [ "AL_MAYA_DECLARE_NODE", "classAL_1_1usdmaya_1_1nodes_1_1Layer.html#a96c166deeb3094658b65df4e70900cd2", null ]
 ];

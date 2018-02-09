@@ -24,6 +24,7 @@ var group__mayagui =
       [ "addDoubleOption", "classAL_1_1maya_1_1CommandGuiHelper.html#ae6f6f256d9cb02ece27d47ec3355d005", null ],
       [ "addDoubleSliderOption", "classAL_1_1maya_1_1CommandGuiHelper.html#adea57a0b5bb50c2a687a004c2036e3a3", null ],
       [ "addEnumOption", "classAL_1_1maya_1_1CommandGuiHelper.html#a8633fdc5271144da14fe186aef26c2a3", null ],
+      [ "addExecuteText", "classAL_1_1maya_1_1CommandGuiHelper.html#a65450c51c5b1658feb63393b8c29beb6", null ],
       [ "addFilePathOption", "classAL_1_1maya_1_1CommandGuiHelper.html#a50a6611af96d1d9903f55830c0b564a9", null ],
       [ "addFlagOption", "classAL_1_1maya_1_1CommandGuiHelper.html#ae69e24a378f82fb91c8ab4627cfd6798", null ],
       [ "addInt2Option", "classAL_1_1maya_1_1CommandGuiHelper.html#a904b45d450e3e2b59798e76a5fe42e38", null ],
@@ -34,7 +35,7 @@ var group__mayagui =
       [ "addInt4Option", "classAL_1_1maya_1_1CommandGuiHelper.html#a88705c2f16b917fd7426d87c6c21d338", null ],
       [ "addIntOption", "classAL_1_1maya_1_1CommandGuiHelper.html#a826f42b0bc545138b095abdab14aacd3", null ],
       [ "addIntSliderOption", "classAL_1_1maya_1_1CommandGuiHelper.html#a284b08297d95f3e958b79a555f3dc6e2", null ],
-      [ "addListOption", "classAL_1_1maya_1_1CommandGuiHelper.html#ab652a44d36a5585d7c2b4359bc541783", null ],
+      [ "addListOption", "classAL_1_1maya_1_1CommandGuiHelper.html#a5cebfe39fc3d3819ff5c6a3894fffedb", null ],
       [ "addRadioButtonGroupOption", "classAL_1_1maya_1_1CommandGuiHelper.html#aeee7515e8e1879663392910e3656ab4b", null ],
       [ "addStringOption", "classAL_1_1maya_1_1CommandGuiHelper.html#a0f507f55406b7c5d81d3cf6100ea0eb5", null ],
       [ "addVec2Option", "classAL_1_1maya_1_1CommandGuiHelper.html#ad7abd3036b27cb8b9cdfd92da002be16", null ],
@@ -102,5 +103,5 @@ var group__mayagui =
       [ "NodeHelper", "classAL_1_1maya_1_1NodeHelper.html#ac241827470a94a3bd61d85c481f9537f", null ],
       [ "~NodeHelper", "classAL_1_1maya_1_1NodeHelper.html#a6b8f93a907e2c5d81e82f04428340a9c", null ]
     ] ],
-    [ "AL_DECL_ATTRIBUTE", "group__mayagui.html#gacd3da57d11633aff3c79151b04e344be", null ]
+    [ "AL_DECL_MULTI_CHILD_ATTRIBUTE", "group__mayagui.html#ga8351ddcc91c6c720b53b4aa57ad9261f", null ]
 ];

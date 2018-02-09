@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">AL_USDMaya
-   &#160;<span id="projectnumber">0.26.a</span>
+   &#160;<span id="projectnumber">0.26.0</span>
    </div>
    <div id="projectbrief">USD to Maya Bridge</div>
   </td>
@@ -142,9 +142,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ace09d1f806b777547a6235003dabd42d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAL_1_1usdmaya_1_1cmds_1_1ProxyShapePostLoadProcess.html#ace09d1f806b777547a6235003dabd42d">connectSchemaPrims</a> (<a class="el" href="classAL_1_1usdmaya_1_1nodes_1_1ProxyShape.html">nodes::ProxyShape</a> *proxy, const std::vector&lt; UsdPrim &gt; &amp;objsToCreate)</td></tr>
 <tr class="memdesc:ace09d1f806b777547a6235003dabd42d"><td class="mdescLeft">&#160;</td><td class="mdescRight">called once all plugin nodes have been created, and will request that each plugin translator performs the postImport fixup to safely make any connections between Maya nodes  <a href="#ace09d1f806b777547a6235003dabd42d">More...</a><br /></td></tr>
 <tr class="separator:ace09d1f806b777547a6235003dabd42d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adfb21ffe57d296dcf82dcf603c3441c4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adfb21ffe57d296dcf82dcf603c3441c4"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>updateSchemaPrims</b> (<a class="el" href="classAL_1_1usdmaya_1_1nodes_1_1ProxyShape.html">nodes::ProxyShape</a> *proxy, const std::vector&lt; UsdPrim &gt; &amp;objsToCreate)</td></tr>
-<tr class="separator:adfb21ffe57d296dcf82dcf603c3441c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98bce603603be011de0277d63476b1e8"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAL_1_1usdmaya_1_1cmds_1_1ProxyShapePostLoadProcess.html#a98bce603603be011de0277d63476b1e8">updateSchemaPrims</a> (<a class="el" href="classAL_1_1usdmaya_1_1nodes_1_1ProxyShape.html">nodes::ProxyShape</a> *proxy, const std::vector&lt; UsdPrim &gt; &amp;objsToUpdate)</td></tr>
+<tr class="memdesc:a98bce603603be011de0277d63476b1e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">updates the list of UsdPrims after a variant switch (but when the nodes have not changed)  <a href="#a98bce603603be011de0277d63476b1e8">More...</a><br /></td></tr>
+<tr class="separator:a98bce603603be011de0277d63476b1e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>When importing a new usd stage into an <a class="el" href="classAL_1_1usdmaya_1_1nodes_1_1ProxyShape.html" title="A custom proxy shape node that attaches itself to a USD file, and then renders it. The stage is held internally as a member variable, and it will be composed based on a change to the &quot;filePath&quot; attribute. ">AL::usdmaya::nodes::ProxyShape</a>, there are a selection of post import processes that need to take place in order to import any custom usd plugins found. </p>
@@ -331,6 +331,49 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>updateSchemaPr
 
 </div>
 </div>
+<a class="anchor" id="a98bce603603be011de0277d63476b1e8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void AL::usdmaya::cmds::ProxyShapePostLoadProcess::updateSchemaPrims </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classAL_1_1usdmaya_1_1nodes_1_1ProxyShape.html">nodes::ProxyShape</a> *&#160;</td>
+          <td class="paramname"><em>proxy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; UsdPrim &gt; &amp;&#160;</td>
+          <td class="paramname"><em>objsToUpdate</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>updates the list of UsdPrims after a variant switch (but when the nodes have not changed) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">proxy</td><td>the proxy shape to update </td></tr>
+    <tr><td class="paramname">objsToUpdate</td><td>the list of prims to be updated </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>src/lib/AL_USDMaya/AL/usdmaya/cmds/<a class="el" href="ProxyShapePostLoadProcess_8h_source.html">ProxyShapePostLoadProcess.h</a></li>
 </ul>
@@ -340,7 +383,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>updateSchemaPr
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceAL.html">AL</a></li><li class="navelem"><b>usdmaya</b></li><li class="navelem"><b>cmds</b></li><li class="navelem"><a class="el" href="classAL_1_1usdmaya_1_1cmds_1_1ProxyShapePostLoadProcess.html">ProxyShapePostLoadProcess</a></li>
-    <li class="footer">Generated on Tue Jan 16 2018 16:47:27 for AL_USDMaya by
+    <li class="footer">Generated on Fri Feb 9 2018 18:12:38 for AL_USDMaya by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

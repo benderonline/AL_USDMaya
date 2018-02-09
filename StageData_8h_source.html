@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">AL_USDMaya
-   &#160;<span id="projectnumber">0.26.a</span>
+   &#160;<span id="projectnumber">0.26.0</span>
    </div>
    <div id="projectbrief">USD to Maya Bridge</div>
   </td>
@@ -125,9 +125,9 @@ $(document).ready(function(){initNavTree('StageData_8h_source.html','');});
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;AL/usdmaya/Common.h&quot;</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;maya/MPxGeometryData.h&quot;</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;maya/MMessage.h&quot;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;AL/maya/MayaEventManager.h&quot;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;maya/MPxGeometryData.h&quot;</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;pxr/pxr.h&quot;</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;pxr/usd/usd/stage.h&quot;</span></div>
@@ -163,7 +163,7 @@ $(document).ready(function(){initNavTree('StageData_8h_source.html','');});
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  MTypeId typeId() <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  MString name() <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  MCallbackId m_exitCallbackId;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <a class="code" href="group__events.html#gafa37852d8ebb3c676750da2dd0fa50bd">maya::CallbackId</a> m_exitCallbackId;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;};</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">//----------------------------------------------------------------------------------------------------------------------</span></div>
@@ -179,13 +179,14 @@ $(document).ready(function(){initNavTree('StageData_8h_source.html','');});
 <div class="ttc" id="classAL_1_1usdmaya_1_1StageData_html_a04130488583cba5b5c42b24a27412d4c"><div class="ttname"><a href="classAL_1_1usdmaya_1_1StageData.html#a04130488583cba5b5c42b24a27412d4c">AL::usdmaya::StageData::StageData</a></div><div class="ttdeci">StageData()</div><div class="ttdoc">ctor </div></div>
 <div class="ttc" id="classAL_1_1usdmaya_1_1StageData_html_af2123023b7d0014faf5c3ca583446ecd"><div class="ttname"><a href="classAL_1_1usdmaya_1_1StageData.html#af2123023b7d0014faf5c3ca583446ecd">AL::usdmaya::StageData::kTypeId</a></div><div class="ttdeci">static const MTypeId kTypeId</div><div class="ttdoc">the type id of the stage data </div><div class="ttdef"><b>Definition:</b> StageData.h:53</div></div>
 <div class="ttc" id="classAL_1_1usdmaya_1_1StageData_html_af8215cdbf77c70329982f13421d9479e"><div class="ttname"><a href="classAL_1_1usdmaya_1_1StageData.html#af8215cdbf77c70329982f13421d9479e">AL::usdmaya::StageData::primPath</a></div><div class="ttdeci">SdfPath primPath</div><div class="ttdoc">the prim path root </div><div class="ttdef"><b>Definition:</b> StageData.h:62</div></div>
+<div class="ttc" id="group__events_html_gafa37852d8ebb3c676750da2dd0fa50bd"><div class="ttname"><a href="group__events.html#gafa37852d8ebb3c676750da2dd0fa50bd">AL::maya::CallbackId</a></div><div class="ttdeci">uint64_t CallbackId</div><div class="ttdoc">An identifier used to represent a callback. Within the 64bit value 3 pieces of information are encode...</div><div class="ttdef"><b>Definition:</b> EventHandler.h:64</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_c85d3e3c5052e9ad9ce18c6863244a25.html">lib</a></li><li class="navelem"><a class="el" href="dir_1bb7ef9dbabe305f6710c4d5a2d124d7.html">AL_USDMaya</a></li><li class="navelem"><a class="el" href="dir_1718e17ee0fed015a6dbff620e7e9f68.html">AL</a></li><li class="navelem"><a class="el" href="dir_bfd18ef9f7ca57c4b661440a6abf5ddf.html">usdmaya</a></li><li class="navelem"><b>StageData.h</b></li>
-    <li class="footer">Generated on Tue Jan 16 2018 16:47:27 for AL_USDMaya by
+    <li class="footer">Generated on Fri Feb 9 2018 18:12:36 for AL_USDMaya by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

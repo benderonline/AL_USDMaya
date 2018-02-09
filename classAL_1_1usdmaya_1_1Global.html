@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">AL_USDMaya
-   &#160;<span id="projectnumber">0.26.a</span>
+   &#160;<span id="projectnumber">0.26.0</span>
    </div>
    <div id="projectbrief">USD to Maya Bridge</div>
   </td>
@@ -129,6 +129,26 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAL_1_1usdmaya_1_1Global.html#aeee753637af6d7be957a48d7a4015047">onPluginUnload</a> ()</td></tr>
 <tr class="memdesc:aeee753637af6d7be957a48d7a4015047"><td class="mdescLeft">&#160;</td><td class="mdescRight">uninitialise the global state <br /></td></tr>
 <tr class="separator:aeee753637af6d7be957a48d7a4015047"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06435f0680d04dae038090bdd011b4c7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a06435f0680d04dae038090bdd011b4c7"></a>
+static <a class="el" href="group__events.html#gafa37852d8ebb3c676750da2dd0fa50bd">maya::CallbackId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAL_1_1usdmaya_1_1Global.html#a06435f0680d04dae038090bdd011b4c7">preSave</a> ()</td></tr>
+<tr class="memdesc:a06435f0680d04dae038090bdd011b4c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">pre save callback <br /></td></tr>
+<tr class="separator:a06435f0680d04dae038090bdd011b4c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9f11d4e9029f2fe9ca1b53ddc54ac4b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa9f11d4e9029f2fe9ca1b53ddc54ac4b"></a>
+static <a class="el" href="group__events.html#gafa37852d8ebb3c676750da2dd0fa50bd">maya::CallbackId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAL_1_1usdmaya_1_1Global.html#aa9f11d4e9029f2fe9ca1b53ddc54ac4b">postSave</a> ()</td></tr>
+<tr class="memdesc:aa9f11d4e9029f2fe9ca1b53ddc54ac4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">post save callback <br /></td></tr>
+<tr class="separator:aa9f11d4e9029f2fe9ca1b53ddc54ac4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add52bb292eb0fc2987428fb5692dd251"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="add52bb292eb0fc2987428fb5692dd251"></a>
+static <a class="el" href="group__events.html#gafa37852d8ebb3c676750da2dd0fa50bd">maya::CallbackId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAL_1_1usdmaya_1_1Global.html#add52bb292eb0fc2987428fb5692dd251">preRead</a> ()</td></tr>
+<tr class="memdesc:add52bb292eb0fc2987428fb5692dd251"><td class="mdescLeft">&#160;</td><td class="mdescRight">pre open callback <br /></td></tr>
+<tr class="separator:add52bb292eb0fc2987428fb5692dd251"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f27c03bf80c11ea6adb51de572dd0df"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2f27c03bf80c11ea6adb51de572dd0df"></a>
+static <a class="el" href="group__events.html#gafa37852d8ebb3c676750da2dd0fa50bd">maya::CallbackId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAL_1_1usdmaya_1_1Global.html#a2f27c03bf80c11ea6adb51de572dd0df">postRead</a> ()</td></tr>
+<tr class="memdesc:a2f27c03bf80c11ea6adb51de572dd0df"><td class="mdescLeft">&#160;</td><td class="mdescRight">post open callback <br /></td></tr>
+<tr class="separator:a2f27c03bf80c11ea6adb51de572dd0df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae311aec7ad765b682a976757494718b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aae311aec7ad765b682a976757494718b"></a>
+static <a class="el" href="group__events.html#gafa37852d8ebb3c676750da2dd0fa50bd">maya::CallbackId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAL_1_1usdmaya_1_1Global.html#aae311aec7ad765b682a976757494718b">fileNew</a> ()</td></tr>
+<tr class="memdesc:aae311aec7ad765b682a976757494718b"><td class="mdescLeft">&#160;</td><td class="mdescRight">callback used to flush the USD caches after a file new <br /></td></tr>
+<tr class="separator:aae311aec7ad765b682a976757494718b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class wraps all of the global state/mechanisms needed to integrate USD and Maya. This mainly handles things such as onFileNew, preFileSave, etc. </p>
@@ -141,7 +161,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceAL.html">AL</a></li><li class="navelem"><b>usdmaya</b></li><li class="navelem"><a class="el" href="classAL_1_1usdmaya_1_1Global.html">Global</a></li>
-    <li class="footer">Generated on Tue Jan 16 2018 16:47:27 for AL_USDMaya by
+    <li class="footer">Generated on Fri Feb 9 2018 18:12:37 for AL_USDMaya by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

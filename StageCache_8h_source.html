@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">AL_USDMaya
-   &#160;<span id="projectnumber">0.26.a</span>
+   &#160;<span id="projectnumber">0.26.0</span>
    </div>
    <div id="projectbrief">USD to Maya Bridge</div>
   </td>
@@ -127,7 +127,7 @@ $(document).ready(function(){initNavTree('StageCache_8h_source.html','');});
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;pxr/pxr.h&quot;</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;pxr/usd/usd/stageCache.h&quot;</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;maya/MSceneMessage.h&quot;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;AL/maya/MayaEventManager.h&quot;</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;PXR_NAMESPACE_USING_DIRECTIVE</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
@@ -144,8 +144,8 @@ $(document).ready(function(){initNavTree('StageCache_8h_source.html','');});
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classAL_1_1usdmaya_1_1StageCache.html#adf2b05ab68f4933f43474631ce4c9005">removeCallbacks</a>();</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keyword">static</span> MCallbackId beforeNewCallbackId;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keyword">static</span> MCallbackId beforeLoadCallbackId;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keyword">static</span> <a class="code" href="group__events.html#gafa37852d8ebb3c676750da2dd0fa50bd">maya::CallbackId</a> g_beforeNewCallbackId;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keyword">static</span> <a class="code" href="group__events.html#gafa37852d8ebb3c676750da2dd0fa50bd">maya::CallbackId</a> g_beforeLoadCallbackId;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;};</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;} <span class="comment">// usdmaya</span></div>
@@ -154,13 +154,14 @@ $(document).ready(function(){initNavTree('StageCache_8h_source.html','');});
 <div class="ttc" id="classAL_1_1usdmaya_1_1StageCache_html_adf2b05ab68f4933f43474631ce4c9005"><div class="ttname"><a href="classAL_1_1usdmaya_1_1StageCache.html#adf2b05ab68f4933f43474631ce4c9005">AL::usdmaya::StageCache::removeCallbacks</a></div><div class="ttdeci">static void removeCallbacks()</div><div class="ttdoc">deletes the callbacks constructed to manage the stage cache </div></div>
 <div class="ttc" id="classAL_1_1usdmaya_1_1StageCache_html"><div class="ttname"><a href="classAL_1_1usdmaya_1_1StageCache.html">AL::usdmaya::StageCache</a></div><div class="ttdoc">Maintains a cache of all active stages within maya. </div><div class="ttdef"><b>Definition:</b> StageCache.h:29</div></div>
 <div class="ttc" id="classAL_1_1usdmaya_1_1StageCache_html_ab9a215769401efedc5488c50e0e413af"><div class="ttname"><a href="classAL_1_1usdmaya_1_1StageCache.html#ab9a215769401efedc5488c50e0e413af">AL::usdmaya::StageCache::Get</a></div><div class="ttdeci">static UsdStageCache &amp; Get(bool forcePopulate=true)</div><div class="ttdoc">Return the singleton stage cache for use by all USD clients within Maya. 2 stage caches are maintaine...</div></div>
+<div class="ttc" id="group__events_html_gafa37852d8ebb3c676750da2dd0fa50bd"><div class="ttname"><a href="group__events.html#gafa37852d8ebb3c676750da2dd0fa50bd">AL::maya::CallbackId</a></div><div class="ttdeci">uint64_t CallbackId</div><div class="ttdoc">An identifier used to represent a callback. Within the 64bit value 3 pieces of information are encode...</div><div class="ttdef"><b>Definition:</b> EventHandler.h:64</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_c85d3e3c5052e9ad9ce18c6863244a25.html">lib</a></li><li class="navelem"><a class="el" href="dir_1bb7ef9dbabe305f6710c4d5a2d124d7.html">AL_USDMaya</a></li><li class="navelem"><a class="el" href="dir_1718e17ee0fed015a6dbff620e7e9f68.html">AL</a></li><li class="navelem"><a class="el" href="dir_bfd18ef9f7ca57c4b661440a6abf5ddf.html">usdmaya</a></li><li class="navelem"><b>StageCache.h</b></li>
-    <li class="footer">Generated on Tue Jan 16 2018 16:47:27 for AL_USDMaya by
+    <li class="footer">Generated on Fri Feb 9 2018 18:12:36 for AL_USDMaya by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

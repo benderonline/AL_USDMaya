@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">AL_USDMaya
-   &#160;<span id="projectnumber">0.26.a</span>
+   &#160;<span id="projectnumber">0.26.0</span>
    </div>
    <div id="projectbrief">USD to Maya Bridge</div>
   </td>
@@ -120,6 +120,11 @@ Modules</h2></td></tr>
 </ol>
 <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:group__events"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__events.html">Core Event System</a></td></tr>
+<tr class="memdesc:group__events"><td class="mdescLeft">&#160;</td><td class="mdescRight">The AL_USDMaya event system attempts to provide a more robust event system for Maya that works around some of the short comings of the MMessage/scriptJob approach. This system is employed within AL_USDMaya to expose programming hooks that can be used to execute your own code during the internal processes of AL_USDMaya <em>(e.g. before/after a variant switch)</em> <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:group__mayaevents"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mayaevents.html">Maya Event System</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -135,9 +140,18 @@ Macros</h2></td></tr>
 <tr class="memitem:ga7f1bc77b6b7bbcb26db0b3095e0460fa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mayautils.html#ga7f1bc77b6b7bbcb26db0b3095e0460fa">AL_MAYA_CHECK_ERROR2</a>(status, ErrorString)</td></tr>
 <tr class="memdesc:ga7f1bc77b6b7bbcb26db0b3095e0460fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given the status, validates that the status is ok. If not, an error is logged using the specified error message. If an error occurs, the program execution continues.  <a href="#ga7f1bc77b6b7bbcb26db0b3095e0460fa">More...</a><br /></td></tr>
 <tr class="separator:ga7f1bc77b6b7bbcb26db0b3095e0460fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga242186a06d6e632d90237cee77fb7cc7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mayautils.html#ga242186a06d6e632d90237cee77fb7cc7">AL_MAYA_CHECK_ERROR_CONTINUE</a>(status, ErrorString)</td></tr>
+<tr class="memdesc:ga242186a06d6e632d90237cee77fb7cc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given the status, validates that the status is ok. If not, an error is logged using the specified error message. If an error occurs, then a "continue" statement is issued (and so should be used in loops).  <a href="#ga242186a06d6e632d90237cee77fb7cc7">More...</a><br /></td></tr>
+<tr class="separator:ga242186a06d6e632d90237cee77fb7cc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad026e8388f38951dafac298fe119f51b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mayautils.html#gad026e8388f38951dafac298fe119f51b">AL_MAYA_CHECK_ERROR_RETURN</a>(status, ErrorString)</td></tr>
+<tr class="memdesc:gad026e8388f38951dafac298fe119f51b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given the status, validates that the status is ok. If not, an error is logged using the specified error message. If an error occurs, then exit immediately, with no return.  <a href="#gad026e8388f38951dafac298fe119f51b">More...</a><br /></td></tr>
+<tr class="separator:gad026e8388f38951dafac298fe119f51b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga298e2f4decf240161e1f11cfece79cb1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mayautils.html#ga298e2f4decf240161e1f11cfece79cb1">AL_MAYA_CHECK_ERROR_RETURN_NULL_MOBJECT</a>(status, ErrorString)</td></tr>
 <tr class="memdesc:ga298e2f4decf240161e1f11cfece79cb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given the status, validates that the status is ok. If not, an error is logged using the specified error message. If an error occurs, a null MObject is returned.  <a href="#ga298e2f4decf240161e1f11cfece79cb1">More...</a><br /></td></tr>
 <tr class="separator:ga298e2f4decf240161e1f11cfece79cb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafe51fae11599c93a133ae7bf2670dbd2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mayautils.html#gafe51fae11599c93a133ae7bf2670dbd2">AL_MAYA_CHECK_ERROR_RETURN_VAL</a>(status, returnVal, ErrorString)</td></tr>
+<tr class="memdesc:gafe51fae11599c93a133ae7bf2670dbd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given the status, validates that the status is ok. If not, an error is logged using the specified error message. If an error occurs, then exit immediately, returning the given value.  <a href="#gafe51fae11599c93a133ae7bf2670dbd2">More...</a><br /></td></tr>
+<tr class="separator:gafe51fae11599c93a133ae7bf2670dbd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga73b4939c29af7ac10e6636d098648e86"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mayautils.html#ga73b4939c29af7ac10e6636d098648e86">LAYER_HANDLE_CHECK</a>(X)</td></tr>
 <tr class="memdesc:ga73b4939c29af7ac10e6636d098648e86"><td class="mdescLeft">&#160;</td><td class="mdescRight">utility macro to check that an SdfLayerHandle is actually valid.  <a href="#ga73b4939c29af7ac10e6636d098648e86">More...</a><br /></td></tr>
 <tr class="separator:ga73b4939c29af7ac10e6636d098648e86"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -202,7 +216,7 @@ Macros</h2></td></tr>
 <div class="line">    maya_error_string += <span class="stringliteral">&quot; : &quot;</span>; \</div>
 <div class="line">    maya_error_string += ErrorString; \</div>
 <div class="line">    MGlobal::displayError(maya_error_string); \</div>
-<div class="line">    return status; \</div>
+<div class="line">    return _status_##__LINE__; \</div>
 <div class="line">  } }</div>
 </div><!-- fragment -->
 <p>Given the status, validates that the status is ok. If not, an error is logged using the specified error message. If an error occurs, the status is returned. </p>
@@ -249,6 +263,88 @@ Macros</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ga242186a06d6e632d90237cee77fb7cc7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define AL_MAYA_CHECK_ERROR_CONTINUE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">status, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">ErrorString&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">{ \</div>
+<div class="line">  MStatus _status_##__LINE__ = status; \</div>
+<div class="line">  if (!_status_##__LINE__) \</div>
+<div class="line">  { \</div>
+<div class="line">    MString maya_error_string = __FILE__ <span class="stringliteral">&quot;:&quot;</span>; \</div>
+<div class="line">    maya_error_string += __LINE__; \</div>
+<div class="line">    maya_error_string += <span class="stringliteral">&quot; &quot;</span>; \</div>
+<div class="line">    maya_error_string += _status_##__LINE__.errorString(); \</div>
+<div class="line">    maya_error_string += <span class="stringliteral">&quot; : &quot;</span>; \</div>
+<div class="line">    maya_error_string += ErrorString; \</div>
+<div class="line">    MGlobal::displayError(maya_error_string); \</div>
+<div class="line">    continue; \</div>
+<div class="line">  } }</div>
+</div><!-- fragment -->
+<p>Given the status, validates that the status is ok. If not, an error is logged using the specified error message. If an error occurs, then a "continue" statement is issued (and so should be used in loops). </p>
+
+</div>
+</div>
+<a class="anchor" id="gad026e8388f38951dafac298fe119f51b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define AL_MAYA_CHECK_ERROR_RETURN</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">status, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">ErrorString&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">{ \</div>
+<div class="line">  MStatus _status_##__LINE__ = status; \</div>
+<div class="line">  if (!_status_##__LINE__) \</div>
+<div class="line">  { \</div>
+<div class="line">    MString maya_error_string = __FILE__ <span class="stringliteral">&quot;:&quot;</span>; \</div>
+<div class="line">    maya_error_string += __LINE__; \</div>
+<div class="line">    maya_error_string += <span class="stringliteral">&quot; &quot;</span>; \</div>
+<div class="line">    maya_error_string += _status_##__LINE__.errorString(); \</div>
+<div class="line">    maya_error_string += <span class="stringliteral">&quot; : &quot;</span>; \</div>
+<div class="line">    maya_error_string += ErrorString; \</div>
+<div class="line">    MGlobal::displayError(maya_error_string); \</div>
+<div class="line">    return; \</div>
+<div class="line">  } }</div>
+</div><!-- fragment -->
+<p>Given the status, validates that the status is ok. If not, an error is logged using the specified error message. If an error occurs, then exit immediately, with no return. </p>
+
+</div>
+</div>
 <a class="anchor" id="ga298e2f4decf240161e1f11cfece79cb1"></a>
 <div class="memitem">
 <div class="memproto">
@@ -287,6 +383,53 @@ Macros</h2></td></tr>
 <div class="line">  } }</div>
 </div><!-- fragment -->
 <p>Given the status, validates that the status is ok. If not, an error is logged using the specified error message. If an error occurs, a null MObject is returned. </p>
+
+</div>
+</div>
+<a class="anchor" id="gafe51fae11599c93a133ae7bf2670dbd2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define AL_MAYA_CHECK_ERROR_RETURN_VAL</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">status, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">returnVal, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">ErrorString&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">{ \</div>
+<div class="line">  MStatus _status_##__LINE__ = status; \</div>
+<div class="line">  if (!_status_##__LINE__) \</div>
+<div class="line">  { \</div>
+<div class="line">    MString maya_error_string = __FILE__ <span class="stringliteral">&quot;:&quot;</span>; \</div>
+<div class="line">    maya_error_string += __LINE__; \</div>
+<div class="line">    maya_error_string += <span class="stringliteral">&quot; &quot;</span>; \</div>
+<div class="line">    maya_error_string += _status_##__LINE__.errorString(); \</div>
+<div class="line">    maya_error_string += <span class="stringliteral">&quot; : &quot;</span>; \</div>
+<div class="line">    maya_error_string += ErrorString; \</div>
+<div class="line">    MGlobal::displayError(maya_error_string); \</div>
+<div class="line">    return returnVal; \</div>
+<div class="line">  } }</div>
+</div><!-- fragment -->
+<p>Given the status, validates that the status is ok. If not, an error is logged using the specified error message. If an error occurs, then exit immediately, returning the given value. </p>
 
 </div>
 </div>
@@ -756,7 +899,7 @@ Macros</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Jan 16 2018 16:47:27 for AL_USDMaya by
+    <li class="footer">Generated on Fri Feb 9 2018 18:12:36 for AL_USDMaya by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

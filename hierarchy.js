@@ -1,7 +1,17 @@
 var hierarchy =
 [
     [ "AL::usdmaya::fileio::AnimationTranslator", "structAL_1_1usdmaya_1_1fileio_1_1AnimationTranslator.html", null ],
+    [ "AL::usdmaya::cmds::BaseCallbackCommand", "structAL_1_1usdmaya_1_1cmds_1_1BaseCallbackCommand.html", [
+      [ "AL::usdmaya::cmds::Callback", "classAL_1_1usdmaya_1_1cmds_1_1Callback.html", null ],
+      [ "AL::usdmaya::cmds::DeleteCallbacks", "classAL_1_1usdmaya_1_1cmds_1_1DeleteCallbacks.html", null ]
+    ] ],
+    [ "AL::maya::Callback", "classAL_1_1maya_1_1Callback.html", null ],
     [ "AL::maya::CommandGuiHelper", "classAL_1_1maya_1_1CommandGuiHelper.html", null ],
+    [ "compare_MDagPath", "structcompare__MDagPath.html", null ],
+    [ "compare_MPlug", "structcompare__MPlug.html", null ],
+    [ "AL::maya::CustomEventHandler", "classAL_1_1maya_1_1CustomEventHandler.html", [
+      [ "AL::maya::MayaEventHandler", "classAL_1_1maya_1_1MayaEventHandler.html", null ]
+    ] ],
     [ "AL::maya::DgNodeHelper", "structAL_1_1maya_1_1DgNodeHelper.html", [
       [ "AL::usdmaya::fileio::translators::DgNodeTranslator", "classAL_1_1usdmaya_1_1fileio_1_1translators_1_1DgNodeTranslator.html", [
         [ "AL::usdmaya::fileio::translators::DagNodeTranslator", "classAL_1_1usdmaya_1_1fileio_1_1translators_1_1DagNodeTranslator.html", [
@@ -13,6 +23,9 @@ var hierarchy =
       ] ]
     ] ],
     [ "AL::usdmaya::nodes::proxy::DrivenTransforms", "classAL_1_1usdmaya_1_1nodes_1_1proxy_1_1DrivenTransforms.html", null ],
+    [ "AL::maya::EventDispatcher", "classAL_1_1maya_1_1EventDispatcher.html", null ],
+    [ "AL::maya::EventScheduler", "classAL_1_1maya_1_1EventScheduler.html", null ],
+    [ "AL::maya::EventSystemBinding", "classAL_1_1maya_1_1EventSystemBinding.html", null ],
     [ "AL::usdmaya::fileio::Export", "classAL_1_1usdmaya_1_1fileio_1_1Export.html", null ],
     [ "AL::usdmaya::fileio::ExporterParams", "structAL_1_1usdmaya_1_1fileio_1_1ExporterParams.html", null ],
     [ "FactoryBase", null, [
@@ -32,7 +45,9 @@ var hierarchy =
     ] ],
     [ "AL::usdmaya::fileio::Import", "classAL_1_1usdmaya_1_1fileio_1_1Import.html", null ],
     [ "AL::usdmaya::fileio::ImporterParams", "structAL_1_1usdmaya_1_1fileio_1_1ImporterParams.html", null ],
-    [ "AL::usdmaya::nodes::LayerVisitor", "classAL_1_1usdmaya_1_1nodes_1_1LayerVisitor.html", null ],
+    [ "AL::usdmaya::nodes::LayerDatabase", "classAL_1_1usdmaya_1_1nodes_1_1LayerDatabase.html", null ],
+    [ "AL::maya::MayaEventHandler::MayaCallbackInfo", "structAL_1_1maya_1_1MayaEventHandler_1_1MayaCallbackInfo.html", null ],
+    [ "AL::maya::MayaEventManager", "classAL_1_1maya_1_1MayaEventManager.html", null ],
     [ "AL::maya::MenuBuilder::Menu", "structAL_1_1maya_1_1MenuBuilder_1_1Menu.html", null ],
     [ "AL::maya::MenuBuilder", "classAL_1_1maya_1_1MenuBuilder.html", null ],
     [ "AL::maya::MenuBuilder::MenuItem", "structAL_1_1maya_1_1MenuBuilder_1_1MenuItem.html", null ],
@@ -40,15 +55,22 @@ var hierarchy =
     [ "AL::usdmaya::MObjectMap", "structAL_1_1usdmaya_1_1MObjectMap.html", null ],
     [ "MPxCommand", null, [
       [ "AL::maya::CommandGuiListGen", "classAL_1_1maya_1_1CommandGuiListGen.html", null ],
+      [ "AL::usdmaya::cmds::Callback", "classAL_1_1usdmaya_1_1cmds_1_1Callback.html", null ],
+      [ "AL::usdmaya::cmds::CallbackQuery", "classAL_1_1usdmaya_1_1cmds_1_1CallbackQuery.html", null ],
+      [ "AL::usdmaya::cmds::DeleteCallbacks", "classAL_1_1usdmaya_1_1cmds_1_1DeleteCallbacks.html", null ],
+      [ "AL::usdmaya::cmds::Event", "classAL_1_1usdmaya_1_1cmds_1_1Event.html", null ],
+      [ "AL::usdmaya::cmds::EventLookup", "classAL_1_1usdmaya_1_1cmds_1_1EventLookup.html", null ],
+      [ "AL::usdmaya::cmds::EventQuery", "classAL_1_1usdmaya_1_1cmds_1_1EventQuery.html", null ],
       [ "AL::usdmaya::cmds::LayerCommandBase", "classAL_1_1usdmaya_1_1cmds_1_1LayerCommandBase.html", [
         [ "AL::usdmaya::cmds::LayerCreateLayer", "classAL_1_1usdmaya_1_1cmds_1_1LayerCreateLayer.html", null ],
-        [ "AL::usdmaya::cmds::LayerCreateSubLayer", "classAL_1_1usdmaya_1_1cmds_1_1LayerCreateSubLayer.html", null ],
         [ "AL::usdmaya::cmds::LayerCurrentEditTarget", "classAL_1_1usdmaya_1_1cmds_1_1LayerCurrentEditTarget.html", null ],
         [ "AL::usdmaya::cmds::LayerExport", "classAL_1_1usdmaya_1_1cmds_1_1LayerExport.html", null ],
         [ "AL::usdmaya::cmds::LayerGetLayers", "classAL_1_1usdmaya_1_1cmds_1_1LayerGetLayers.html", null ],
         [ "AL::usdmaya::cmds::LayerSave", "classAL_1_1usdmaya_1_1cmds_1_1LayerSave.html", null ],
         [ "AL::usdmaya::cmds::LayerSetMuted", "classAL_1_1usdmaya_1_1cmds_1_1LayerSetMuted.html", null ]
       ] ],
+      [ "AL::usdmaya::cmds::ListCallbacks", "classAL_1_1usdmaya_1_1cmds_1_1ListCallbacks.html", null ],
+      [ "AL::usdmaya::cmds::ListEvents", "classAL_1_1usdmaya_1_1cmds_1_1ListEvents.html", null ],
       [ "AL::usdmaya::cmds::ProxyShapeCommandBase", "classAL_1_1usdmaya_1_1cmds_1_1ProxyShapeCommandBase.html", [
         [ "AL::usdmaya::cmds::ActivatePrim", "classAL_1_1usdmaya_1_1cmds_1_1ActivatePrim.html", null ],
         [ "AL::usdmaya::cmds::ChangeVariant", "classAL_1_1usdmaya_1_1cmds_1_1ChangeVariant.html", null ],
@@ -63,6 +85,7 @@ var hierarchy =
         [ "AL::usdmaya::cmds::ProxyShapeSelect", "classAL_1_1usdmaya_1_1cmds_1_1ProxyShapeSelect.html", null ]
       ] ],
       [ "AL::usdmaya::cmds::ProxyShapeImport", "classAL_1_1usdmaya_1_1cmds_1_1ProxyShapeImport.html", null ],
+      [ "AL::usdmaya::cmds::TriggerEvent", "classAL_1_1usdmaya_1_1cmds_1_1TriggerEvent.html", null ],
       [ "AL::usdmaya::cmds::UsdDebugCommand", "classAL_1_1usdmaya_1_1cmds_1_1UsdDebugCommand.html", null ],
       [ "AL::usdmaya::fileio::ExportCommand", "classAL_1_1usdmaya_1_1fileio_1_1ExportCommand.html", null ],
       [ "AL::usdmaya::fileio::ImportCommand", "classAL_1_1usdmaya_1_1fileio_1_1ImportCommand.html", null ]
@@ -80,7 +103,8 @@ var hierarchy =
       [ "AL::usdmaya::StageData", "classAL_1_1usdmaya_1_1StageData.html", null ]
     ] ],
     [ "MPxNode", null, [
-      [ "AL::usdmaya::nodes::Layer", "classAL_1_1usdmaya_1_1nodes_1_1Layer.html", null ]
+      [ "AL::usdmaya::nodes::Layer", "classAL_1_1usdmaya_1_1nodes_1_1Layer.html", null ],
+      [ "AL::usdmaya::nodes::LayerManager", "classAL_1_1usdmaya_1_1nodes_1_1LayerManager.html", null ]
     ] ],
     [ "MPxSurfaceShape", null, [
       [ "AL::usdmaya::nodes::ProxyShape", "classAL_1_1usdmaya_1_1nodes_1_1ProxyShape.html", null ]
@@ -94,9 +118,13 @@ var hierarchy =
     [ "MPxTransformationMatrix", null, [
       [ "AL::usdmaya::nodes::TransformationMatrix", "classAL_1_1usdmaya_1_1nodes_1_1TransformationMatrix.html", null ]
     ] ],
+    [ "AL::maya::NodeEvents", "classAL_1_1maya_1_1NodeEvents.html", [
+      [ "AL::usdmaya::nodes::ProxyShape", "classAL_1_1usdmaya_1_1nodes_1_1ProxyShape.html", null ]
+    ] ],
     [ "AL::usdmaya::fileio::NodeFactory", "structAL_1_1usdmaya_1_1fileio_1_1NodeFactory.html", null ],
     [ "AL::maya::NodeHelper", "classAL_1_1maya_1_1NodeHelper.html", [
       [ "AL::usdmaya::nodes::Layer", "classAL_1_1usdmaya_1_1nodes_1_1Layer.html", null ],
+      [ "AL::usdmaya::nodes::LayerManager", "classAL_1_1usdmaya_1_1nodes_1_1LayerManager.html", null ],
       [ "AL::usdmaya::nodes::ProxyShape", "classAL_1_1usdmaya_1_1nodes_1_1ProxyShape.html", null ],
       [ "AL::usdmaya::nodes::Transform", "classAL_1_1usdmaya_1_1nodes_1_1Transform.html", null ]
     ] ],
@@ -111,6 +139,7 @@ var hierarchy =
     [ "AL::maya::ProfilerSectionPath", "classAL_1_1maya_1_1ProfilerSectionPath.html", null ],
     [ "AL::maya::ProfilerSectionTag", "classAL_1_1maya_1_1ProfilerSectionTag.html", null ],
     [ "AL::usdmaya::cmds::ProxyShapePostLoadProcess", "classAL_1_1usdmaya_1_1cmds_1_1ProxyShapePostLoadProcess.html", null ],
+    [ "AL::usdmaya::fileio::ScaledPair", "structAL_1_1usdmaya_1_1fileio_1_1ScaledPair.html", null ],
     [ "AL::usdmaya::fileio::SchemaPrimsUtils", "classAL_1_1usdmaya_1_1fileio_1_1SchemaPrimsUtils.html", null ],
     [ "AL::usdmaya::SelectabilityDB", "classAL_1_1usdmaya_1_1SelectabilityDB.html", null ],
     [ "AL::usdmaya::nodes::SelectionList", "classAL_1_1usdmaya_1_1nodes_1_1SelectionList.html", null ],

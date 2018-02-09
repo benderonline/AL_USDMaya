@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">AL_USDMaya
-   &#160;<span id="projectnumber">0.26.a</span>
+   &#160;<span id="projectnumber">0.26.0</span>
    </div>
    <div id="projectbrief">USD to Maya Bridge</div>
   </td>
@@ -107,39 +107,57 @@ $(document).ready(function(){initNavTree('structAL_1_1usdmaya_1_1nodes_1_1Hierar
 
 <div class="header">
   <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="structAL_1_1usdmaya_1_1nodes_1_1HierarchyIterationLogic-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AL::usdmaya::nodes::HierarchyIterationLogic Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>A class that provides the logic behind a hierarchy traversal through a UsdStage.  
+ <a href="structAL_1_1usdmaya_1_1nodes_1_1HierarchyIterationLogic.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="ProxyShape_8h_source.html">ProxyShape.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for AL::usdmaya::nodes::HierarchyIterationLogic:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="structAL_1_1usdmaya_1_1nodes_1_1HierarchyIterationLogic.png" usemap="#AL::usdmaya::nodes::HierarchyIterationLogic_map" alt=""/>
   <map id="AL::usdmaya::nodes::HierarchyIterationLogic_map" name="AL::usdmaya::nodes::HierarchyIterationLogic_map">
-<area href="structAL_1_1usdmaya_1_1nodes_1_1FindLockedPrimsLogic.html" alt="AL::usdmaya::nodes::FindLockedPrimsLogic" shape="rect" coords="0,56,289,80"/>
-<area href="structAL_1_1usdmaya_1_1nodes_1_1FindUnselectablePrimsLogic.html" alt="AL::usdmaya::nodes::FindUnselectablePrimsLogic" shape="rect" coords="299,56,588,80"/>
+<area href="structAL_1_1usdmaya_1_1nodes_1_1FindLockedPrimsLogic.html" title="implements the logic required when searching for locked prims within a UsdStage " alt="AL::usdmaya::nodes::FindLockedPrimsLogic" shape="rect" coords="0,56,289,80"/>
+<area href="structAL_1_1usdmaya_1_1nodes_1_1FindUnselectablePrimsLogic.html" title="implements the logic that constructs a list of objects that need to be added or removed from the sele..." alt="AL::usdmaya::nodes::FindUnselectablePrimsLogic" shape="rect" coords="299,56,588,80"/>
 </map>
  </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a54b9cd1982311eb8e1e6bab9f97a9775"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a54b9cd1982311eb8e1e6bab9f97a9775"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structAL_1_1usdmaya_1_1nodes_1_1HierarchyIterationLogic.html#a54b9cd1982311eb8e1e6bab9f97a9775">HierarchyIterationLogic</a> ()</td></tr>
+<tr class="memdesc:a54b9cd1982311eb8e1e6bab9f97a9775"><td class="mdescLeft">&#160;</td><td class="mdescRight">ctor <br /></td></tr>
+<tr class="separator:a54b9cd1982311eb8e1e6bab9f97a9775"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a7b80bc8a6ca7505d9782e63345313a60"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7b80bc8a6ca7505d9782e63345313a60"></a>
-std::function&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>preIteration</b></td></tr>
+std::function&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structAL_1_1usdmaya_1_1nodes_1_1HierarchyIterationLogic.html#a7b80bc8a6ca7505d9782e63345313a60">preIteration</a></td></tr>
+<tr class="memdesc:a7b80bc8a6ca7505d9782e63345313a60"><td class="mdescLeft">&#160;</td><td class="mdescRight">provide a method to be called prior to iteration of the UsdStage hierarchy <br /></td></tr>
 <tr class="separator:a7b80bc8a6ca7505d9782e63345313a60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56a4b04954a0ae4b9c4c6c5f7f0f8af9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a56a4b04954a0ae4b9c4c6c5f7f0f8af9"></a>
 std::function&lt; void(const <br class="typebreak" />
 <a class="el" href="classAL_1_1usdmaya_1_1fileio_1_1TransformIterator.html">fileio::TransformIterator</a> <br class="typebreak" />
 &amp;transformIterator, const <br class="typebreak" />
-UsdPrim &amp;prim)&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>iteration</b></td></tr>
+UsdPrim &amp;prim)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structAL_1_1usdmaya_1_1nodes_1_1HierarchyIterationLogic.html#a56a4b04954a0ae4b9c4c6c5f7f0f8af9">iteration</a></td></tr>
+<tr class="memdesc:a56a4b04954a0ae4b9c4c6c5f7f0f8af9"><td class="mdescLeft">&#160;</td><td class="mdescRight">a visitor method that is called on each of the UsdPrims in the stage hierarchy <br /></td></tr>
 <tr class="separator:a56a4b04954a0ae4b9c4c6c5f7f0f8af9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a283e048066efafb0232bcb221141251c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a283e048066efafb0232bcb221141251c"></a>
-std::function&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>postIteration</b></td></tr>
+std::function&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structAL_1_1usdmaya_1_1nodes_1_1HierarchyIterationLogic.html#a283e048066efafb0232bcb221141251c">postIteration</a></td></tr>
+<tr class="memdesc:a283e048066efafb0232bcb221141251c"><td class="mdescLeft">&#160;</td><td class="mdescRight">provide a method to be called after iteration of the UsdStage hierarchy <br /></td></tr>
 <tr class="separator:a283e048066efafb0232bcb221141251c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this struct was generated from the following file:<ul>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A class that provides the logic behind a hierarchy traversal through a UsdStage. </p>
+</div><hr/>The documentation for this struct was generated from the following file:<ul>
 <li>src/lib/AL_USDMaya/AL/usdmaya/nodes/<a class="el" href="ProxyShape_8h_source.html">ProxyShape.h</a></li>
 </ul>
 </div><!-- contents -->
@@ -148,7 +166,7 @@ std::function&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom">
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceAL.html">AL</a></li><li class="navelem"><b>usdmaya</b></li><li class="navelem"><b>nodes</b></li><li class="navelem"><a class="el" href="structAL_1_1usdmaya_1_1nodes_1_1HierarchyIterationLogic.html">HierarchyIterationLogic</a></li>
-    <li class="footer">Generated on Tue Jan 16 2018 16:47:28 for AL_USDMaya by
+    <li class="footer">Generated on Fri Feb 9 2018 18:12:38 for AL_USDMaya by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

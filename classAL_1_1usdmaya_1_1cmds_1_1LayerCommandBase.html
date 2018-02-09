@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">AL_USDMaya
-   &#160;<span id="projectnumber">0.26.a</span>
+   &#160;<span id="projectnumber">0.26.0</span>
    </div>
    <div id="projectbrief">USD to Maya Bridge</div>
   </td>
@@ -126,12 +126,11 @@ Inheritance diagram for AL::usdmaya::cmds::LayerCommandBase:</div>
   <img src="classAL_1_1usdmaya_1_1cmds_1_1LayerCommandBase.png" usemap="#AL::usdmaya::cmds::LayerCommandBase_map" alt=""/>
   <map id="AL::usdmaya::cmds::LayerCommandBase_map" name="AL::usdmaya::cmds::LayerCommandBase_map">
 <area href="classAL_1_1usdmaya_1_1cmds_1_1LayerCreateLayer.html" title="Given some selected or passed in proxy shape node, create a layer in maya parented to the layer match..." alt="AL::usdmaya::cmds::LayerCreateLayer" shape="rect" coords="0,112,258,136"/>
-<area href="classAL_1_1usdmaya_1_1cmds_1_1LayerCreateSubLayer.html" title="Given some selected proxy shape node, create a new sub layer for the current edit target..." alt="AL::usdmaya::cmds::LayerCreateSubLayer" shape="rect" coords="268,112,526,136"/>
-<area href="classAL_1_1usdmaya_1_1cmds_1_1LayerCurrentEditTarget.html" title="Get / Set the current edit target for the stage. " alt="AL::usdmaya::cmds::LayerCurrentEditTarget" shape="rect" coords="536,112,794,136"/>
-<area href="classAL_1_1usdmaya_1_1cmds_1_1LayerExport.html" title="Export a layer to the given filename. " alt="AL::usdmaya::cmds::LayerExport" shape="rect" coords="804,112,1062,136"/>
-<area href="classAL_1_1usdmaya_1_1cmds_1_1LayerGetLayers.html" title="Given some selected proxy shape node, return the layer names. " alt="AL::usdmaya::cmds::LayerGetLayers" shape="rect" coords="1072,112,1330,136"/>
-<area href="classAL_1_1usdmaya_1_1cmds_1_1LayerSave.html" title="Save the specified layer. " alt="AL::usdmaya::cmds::LayerSave" shape="rect" coords="1340,112,1598,136"/>
-<area href="classAL_1_1usdmaya_1_1cmds_1_1LayerSetMuted.html" title="Get / Set whether the layer is currently muted. " alt="AL::usdmaya::cmds::LayerSetMuted" shape="rect" coords="1608,112,1866,136"/>
+<area href="classAL_1_1usdmaya_1_1cmds_1_1LayerCurrentEditTarget.html" title="Get / Set the current edit target for the stage. " alt="AL::usdmaya::cmds::LayerCurrentEditTarget" shape="rect" coords="268,112,526,136"/>
+<area href="classAL_1_1usdmaya_1_1cmds_1_1LayerExport.html" title="Export a layer to the given filename. " alt="AL::usdmaya::cmds::LayerExport" shape="rect" coords="536,112,794,136"/>
+<area href="classAL_1_1usdmaya_1_1cmds_1_1LayerGetLayers.html" title="Given some selected proxy shape node, return the layer names. " alt="AL::usdmaya::cmds::LayerGetLayers" shape="rect" coords="804,112,1062,136"/>
+<area href="classAL_1_1usdmaya_1_1cmds_1_1LayerSave.html" title="Save the specified layer. " alt="AL::usdmaya::cmds::LayerSave" shape="rect" coords="1072,112,1330,136"/>
+<area href="classAL_1_1usdmaya_1_1cmds_1_1LayerSetMuted.html" title="Get / Set whether the layer is currently muted. " alt="AL::usdmaya::cmds::LayerSetMuted" shape="rect" coords="1340,112,1598,136"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -146,9 +145,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a72887454562e102915d1be8365830ab0"><td class="memItemLeft" align="right" valign="top">MArgDatabase&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAL_1_1usdmaya_1_1cmds_1_1LayerCommandBase.html#a72887454562e102915d1be8365830ab0">makeDatabase</a> (const MArgList &amp;args)</td></tr>
 <tr class="memdesc:a72887454562e102915d1be8365830ab0"><td class="mdescLeft">&#160;</td><td class="mdescRight">construct the arg data base from an args list. If any errors are found during parsing, an error will be thrown  <a href="#a72887454562e102915d1be8365830ab0">More...</a><br /></td></tr>
 <tr class="separator:a72887454562e102915d1be8365830ab0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6ebef05a06ededf91c8f880d98629bf"><td class="memItemLeft" align="right" valign="top">MObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAL_1_1usdmaya_1_1cmds_1_1LayerCommandBase.html#aa6ebef05a06ededf91c8f880d98629bf">getSelectedNode</a> (const MArgDatabase &amp;args, const MTypeId typeId)</td></tr>
-<tr class="memdesc:aa6ebef05a06ededf91c8f880d98629bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">hunt for the first node of the specified type found in the selection list object args  <a href="#aa6ebef05a06ededf91c8f880d98629bf">More...</a><br /></td></tr>
-<tr class="separator:aa6ebef05a06ededf91c8f880d98629bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -159,42 +155,6 @@ Static Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Helper class. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="aa6ebef05a06ededf91c8f880d98629bf"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">MObject AL::usdmaya::cmds::LayerCommandBase::getSelectedNode </td>
-          <td>(</td>
-          <td class="paramtype">const MArgDatabase &amp;&#160;</td>
-          <td class="paramname"><em>args</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const MTypeId&#160;</td>
-          <td class="paramname"><em>typeId</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>hunt for the first node of the specified type found in the selection list object args </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">args</td><td>the pre-parsed argument data base </td></tr>
-    <tr><td class="paramname">typeId</td><td>the typeId of the object type that may appear as one of the selected objects </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the MObject of the node if found </dd></dl>
-
-</div>
-</div>
 <a class="anchor" id="aa38da4f79356fbc32f42807c1e1e27de"></a>
 <div class="memitem">
 <div class="memproto">
@@ -305,7 +265,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceAL.html">AL</a></li><li class="navelem"><b>usdmaya</b></li><li class="navelem"><b>cmds</b></li><li class="navelem"><a class="el" href="classAL_1_1usdmaya_1_1cmds_1_1LayerCommandBase.html">LayerCommandBase</a></li>
-    <li class="footer">Generated on Tue Jan 16 2018 16:47:27 for AL_USDMaya by
+    <li class="footer">Generated on Fri Feb 9 2018 18:12:37 for AL_USDMaya by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">AL_USDMaya
-   &#160;<span id="projectnumber">0.26.a</span>
+   &#160;<span id="projectnumber">0.26.0</span>
    </div>
    <div id="projectbrief">USD to Maya Bridge</div>
   </td>
@@ -114,14 +114,41 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAL_1_1usdmaya_1_1cmds_1_1UsdDebugCommand.html">AL::usdmaya::cmds::UsdDebugCommand</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A command that allows you to query and modify the current status of the TfDebug symbols.  <a href="classAL_1_1usdmaya_1_1cmds_1_1UsdDebugCommand.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structAL_1_1usdmaya_1_1cmds_1_1BaseCallbackCommand.html">AL::usdmaya::cmds::BaseCallbackCommand</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The base class for all commands that need to create/delete callbacks in some way. Fill m_callbacksToDelete with the CallbackIds you want to delete, and fill the m_callbacksToInsert array with the callbacks returned from <a class="el" href="classAL_1_1maya_1_1EventScheduler.html#a6c58a00c681e604263b6d48024a75e9c" title="register a new event callback ">AL::maya::EventScheduler::buildCallback</a>. Within the undo/redo implementation of a mel command, simply call redoItImplementation. This method will destroy the callbacks requested, and insert the created callbacks. Once called, the values of the m_callbacksToDelete and m_callbacksToInsert will be swapped, therefore calling redoItImplementation again will undo the previous action.  <a href="structAL_1_1usdmaya_1_1cmds_1_1BaseCallbackCommand.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAL_1_1usdmaya_1_1cmds_1_1Event.html">AL::usdmaya::cmds::Event</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A command that allows you to register and unregister new <a class="el" href="classAL_1_1usdmaya_1_1cmds_1_1Event.html" title="A command that allows you to register and unregister new Event types from script. ...">Event</a> types from script.  <a href="classAL_1_1usdmaya_1_1cmds_1_1Event.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAL_1_1usdmaya_1_1cmds_1_1EventQuery.html">AL::usdmaya::cmds::EventQuery</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A command that allows you to query information about a specific event.  <a href="classAL_1_1usdmaya_1_1cmds_1_1EventQuery.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAL_1_1usdmaya_1_1cmds_1_1EventLookup.html">AL::usdmaya::cmds::EventLookup</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A command that allows you to query information about an event.  <a href="classAL_1_1usdmaya_1_1cmds_1_1EventLookup.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAL_1_1usdmaya_1_1cmds_1_1Callback.html">AL::usdmaya::cmds::Callback</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A command that allows you to create / delete callbacks assigned to a specific event within AL_usdmaya.  <a href="classAL_1_1usdmaya_1_1cmds_1_1Callback.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAL_1_1usdmaya_1_1cmds_1_1ListEvents.html">AL::usdmaya::cmds::ListEvents</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A command that lists the events available on either a particular node, or the global set of events.  <a href="classAL_1_1usdmaya_1_1cmds_1_1ListEvents.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAL_1_1usdmaya_1_1cmds_1_1TriggerEvent.html">AL::usdmaya::cmds::TriggerEvent</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A command that will trigger all callbacks on an event.  <a href="classAL_1_1usdmaya_1_1cmds_1_1TriggerEvent.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAL_1_1usdmaya_1_1cmds_1_1DeleteCallbacks.html">AL::usdmaya::cmds::DeleteCallbacks</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A command that will delete all callback ids specified as an argument.  <a href="classAL_1_1usdmaya_1_1cmds_1_1DeleteCallbacks.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAL_1_1usdmaya_1_1cmds_1_1ListCallbacks.html">AL::usdmaya::cmds::ListCallbacks</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A command that lists the events available on either a particular node, or the global set of events.  <a href="classAL_1_1usdmaya_1_1cmds_1_1ListCallbacks.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAL_1_1usdmaya_1_1cmds_1_1CallbackQuery.html">AL::usdmaya::cmds::CallbackQuery</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A command that lists the events available on either a particular node, or the global set of events.  <a href="classAL_1_1usdmaya_1_1cmds_1_1CallbackQuery.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAL_1_1usdmaya_1_1cmds_1_1LayerCommandBase.html">AL::usdmaya::cmds::LayerCommandBase</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper class.  <a href="classAL_1_1usdmaya_1_1cmds_1_1LayerCommandBase.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAL_1_1usdmaya_1_1cmds_1_1LayerGetLayers.html">AL::usdmaya::cmds::LayerGetLayers</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given some selected proxy shape node, return the layer names.  <a href="classAL_1_1usdmaya_1_1cmds_1_1LayerGetLayers.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAL_1_1usdmaya_1_1cmds_1_1LayerCreateSubLayer.html">AL::usdmaya::cmds::LayerCreateSubLayer</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given some selected proxy shape node, create a new sub layer for the current edit target.  <a href="classAL_1_1usdmaya_1_1cmds_1_1LayerCreateSubLayer.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAL_1_1usdmaya_1_1cmds_1_1LayerCreateLayer.html">AL::usdmaya::cmds::LayerCreateLayer</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given some selected or passed in proxy shape node, create a layer in maya parented to the layer matching the identifier passed in, else parents to the rootlayer.  <a href="classAL_1_1usdmaya_1_1cmds_1_1LayerCreateLayer.html#details">More...</a><br /></td></tr>
@@ -199,7 +226,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Jan 16 2018 16:47:27 for AL_USDMaya by
+    <li class="footer">Generated on Fri Feb 9 2018 18:12:36 for AL_USDMaya by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

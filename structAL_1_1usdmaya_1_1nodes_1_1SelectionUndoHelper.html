@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">AL_USDMaya
-   &#160;<span id="projectnumber">0.26.a</span>
+   &#160;<span id="projectnumber">0.26.0</span>
    </div>
    <div id="projectbrief">USD to Maya Bridge</div>
   </td>
@@ -107,6 +107,7 @@ $(document).ready(function(){initNavTree('structAL_1_1usdmaya_1_1nodes_1_1Select
 
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="structAL_1_1usdmaya_1_1nodes_1_1SelectionUndoHelper-members.html">List of all members</a>  </div>
@@ -120,11 +121,19 @@ $(document).ready(function(){initNavTree('structAL_1_1usdmaya_1_1nodes_1_1Select
 
 <p><code>#include &lt;<a class="el" href="ProxyShape_8h_source.html">ProxyShape.h</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a150425d49be76f8baaa796d9c28cf686"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a150425d49be76f8baaa796d9c28cf686"></a>
+typedef TfHashSet&lt; SdfPath, <br class="typebreak" />
+SdfPath::Hash &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structAL_1_1usdmaya_1_1nodes_1_1SelectionUndoHelper.html#a150425d49be76f8baaa796d9c28cf686">SdfPathHashSet</a></td></tr>
+<tr class="memdesc:a150425d49be76f8baaa796d9c28cf686"><td class="mdescLeft">&#160;</td><td class="mdescRight">a hash set of SdfPaths <br /></td></tr>
+<tr class="separator:a150425d49be76f8baaa796d9c28cf686"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0b0e5bfd2f641bd8baa946670e173a6c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structAL_1_1usdmaya_1_1nodes_1_1SelectionUndoHelper.html#a0b0e5bfd2f641bd8baa946670e173a6c">SelectionUndoHelper</a> (<a class="el" href="classAL_1_1usdmaya_1_1nodes_1_1ProxyShape.html">nodes::ProxyShape</a> *proxy, SdfPathVector paths, MGlobal::ListAdjustment mode, bool internal=false)</td></tr>
-<tr class="memdesc:a0b0e5bfd2f641bd8baa946670e173a6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct with the arguments to select / deselect nodes on a proxy shape.  <a href="#a0b0e5bfd2f641bd8baa946670e173a6c">More...</a><br /></td></tr>
-<tr class="separator:a0b0e5bfd2f641bd8baa946670e173a6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bdbc4ab47f0ce4b1df0a68b138aa59a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structAL_1_1usdmaya_1_1nodes_1_1SelectionUndoHelper.html#a2bdbc4ab47f0ce4b1df0a68b138aa59a">SelectionUndoHelper</a> (<a class="el" href="classAL_1_1usdmaya_1_1nodes_1_1ProxyShape.html">nodes::ProxyShape</a> *proxy, const <a class="el" href="structAL_1_1usdmaya_1_1nodes_1_1SelectionUndoHelper.html#a150425d49be76f8baaa796d9c28cf686">SdfPathHashSet</a> &amp;paths, MGlobal::ListAdjustment mode, bool internal=false)</td></tr>
+<tr class="memdesc:a2bdbc4ab47f0ce4b1df0a68b138aa59a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct with the arguments to select / deselect nodes on a proxy shape.  <a href="#a2bdbc4ab47f0ce4b1df0a68b138aa59a">More...</a><br /></td></tr>
+<tr class="separator:a2bdbc4ab47f0ce4b1df0a68b138aa59a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7816c7125483f3a3101076f466e538a5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7816c7125483f3a3101076f466e538a5"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structAL_1_1usdmaya_1_1nodes_1_1SelectionUndoHelper.html#a7816c7125483f3a3101076f466e538a5">doIt</a> ()</td></tr>
 <tr class="memdesc:a7816c7125483f3a3101076f466e538a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">performs the selection changes <br /></td></tr>
@@ -149,9 +158,9 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>ProxyShape</b></td><
 <li>The maya selection list after the selection change </li>
 <li>The internal transformation references before and after the selection change</li>
 </ul>
-<p>This class is intended to exist as a member variable on a MEL selection command. Once constructed, the class should be passed to the <a class="el" href="classAL_1_1usdmaya_1_1nodes_1_1ProxyShape.html#a0449129acd531ab5a3d0821b6a74a27c" title="Performs a selection operation on this node. Intended for use by the ProxyShapeSelect command only...">ProxyShape::doSelect</a> method to construct the internal state changes. At that point, you may call <a class="el" href="structAL_1_1usdmaya_1_1nodes_1_1SelectionUndoHelper.html#a7816c7125483f3a3101076f466e538a5" title="performs the selection changes ">doIt()</a> to perform the changes, <a class="el" href="structAL_1_1usdmaya_1_1nodes_1_1SelectionUndoHelper.html#aa1cddb8b16001b00564edfdb05c05f1f" title="will undo the selection changes ">undoIt()</a> to revert the changes. </p>
+<p>This class is intended to exist as a member variable on a MEL selection command. Once constructed, the class should be passed to the <a class="el" href="classAL_1_1usdmaya_1_1nodes_1_1ProxyShape.html#a3b29e3949ceee65277d509ffce0b88bf" title="Performs a selection operation on this node. Intended for use by the ProxyShapeSelect command only...">ProxyShape::doSelect</a> method to construct the internal state changes. At that point, you may call <a class="el" href="structAL_1_1usdmaya_1_1nodes_1_1SelectionUndoHelper.html#a7816c7125483f3a3101076f466e538a5" title="performs the selection changes ">doIt()</a> to perform the changes, <a class="el" href="structAL_1_1usdmaya_1_1nodes_1_1SelectionUndoHelper.html#aa1cddb8b16001b00564edfdb05c05f1f" title="will undo the selection changes ">undoIt()</a> to revert the changes. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a0b0e5bfd2f641bd8baa946670e173a6c"></a>
+<a class="anchor" id="a2bdbc4ab47f0ce4b1df0a68b138aa59a"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -164,7 +173,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>ProxyShape</b></td><
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">SdfPathVector&#160;</td>
+          <td class="paramtype">const <a class="el" href="structAL_1_1usdmaya_1_1nodes_1_1SelectionUndoHelper.html#a150425d49be76f8baaa796d9c28cf686">SdfPathHashSet</a> &amp;&#160;</td>
           <td class="paramname"><em>paths</em>, </td>
         </tr>
         <tr>
@@ -209,7 +218,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>ProxyShape</b></td><
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceAL.html">AL</a></li><li class="navelem"><b>usdmaya</b></li><li class="navelem"><b>nodes</b></li><li class="navelem"><a class="el" href="structAL_1_1usdmaya_1_1nodes_1_1SelectionUndoHelper.html">SelectionUndoHelper</a></li>
-    <li class="footer">Generated on Tue Jan 16 2018 16:47:28 for AL_USDMaya by
+    <li class="footer">Generated on Fri Feb 9 2018 18:12:38 for AL_USDMaya by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

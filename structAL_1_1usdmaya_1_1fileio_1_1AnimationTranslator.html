@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">AL_USDMaya
-   &#160;<span id="projectnumber">0.26.a</span>
+   &#160;<span id="projectnumber">0.26.0</span>
    </div>
    <div id="projectbrief">USD to Maya Bridge</div>
   </td>
@@ -131,6 +131,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae89fb6a97c4abda37b49370b10b9d1fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structAL_1_1usdmaya_1_1fileio_1_1AnimationTranslator.html#ae89fb6a97c4abda37b49370b10b9d1fb">addTransformPlug</a> (const MPlug &amp;plug, const UsdAttribute &amp;attribute, const bool assumeExpressionIsAnimated)</td></tr>
 <tr class="memdesc:ae89fb6a97c4abda37b49370b10b9d1fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">add a transform plug to the animation translator (if the plug is animated)  <a href="#ae89fb6a97c4abda37b49370b10b9d1fb">More...</a><br /></td></tr>
 <tr class="separator:ae89fb6a97c4abda37b49370b10b9d1fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a606c61c7fd74c4c03ec742315d3c484d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structAL_1_1usdmaya_1_1fileio_1_1AnimationTranslator.html#a606c61c7fd74c4c03ec742315d3c484d">forceAddTransformPlug</a> (const MPlug &amp;plug, const UsdAttribute &amp;attribute)</td></tr>
+<tr class="memdesc:a606c61c7fd74c4c03ec742315d3c484d"><td class="mdescLeft">&#160;</td><td class="mdescRight">add a transform plug to the animation translator (if the plug is animated)  <a href="#a606c61c7fd74c4c03ec742315d3c484d">More...</a><br /></td></tr>
+<tr class="separator:a606c61c7fd74c4c03ec742315d3c484d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2d1e88755fd90ca04e0149022eca509"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structAL_1_1usdmaya_1_1fileio_1_1AnimationTranslator.html#ae2d1e88755fd90ca04e0149022eca509">forceAddPlug</a> (const MPlug &amp;plug, const UsdAttribute &amp;attribute, const float scale)</td></tr>
+<tr class="memdesc:ae2d1e88755fd90ca04e0149022eca509"><td class="mdescLeft">&#160;</td><td class="mdescRight">add a scaled plug to the animation translator (if the plug is animated)  <a href="#ae2d1e88755fd90ca04e0149022eca509">More...</a><br /></td></tr>
+<tr class="separator:ae2d1e88755fd90ca04e0149022eca509"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61873b94c928402447a65258706ab1af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structAL_1_1usdmaya_1_1fileio_1_1AnimationTranslator.html#a61873b94c928402447a65258706ab1af">forceAddPlug</a> (const MPlug &amp;plug, const UsdAttribute &amp;attribute)</td></tr>
+<tr class="memdesc:a61873b94c928402447a65258706ab1af"><td class="mdescLeft">&#160;</td><td class="mdescRight">add an animated plug to the animation translator (if the plug is animated)  <a href="#a61873b94c928402447a65258706ab1af">More...</a><br /></td></tr>
+<tr class="separator:a61873b94c928402447a65258706ab1af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51e3a7b5eed2e73b3df635b9b86415bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structAL_1_1usdmaya_1_1fileio_1_1AnimationTranslator.html#a51e3a7b5eed2e73b3df635b9b86415bf">addMesh</a> (const MDagPath &amp;path, const UsdAttribute &amp;attribute)</td></tr>
 <tr class="memdesc:a51e3a7b5eed2e73b3df635b9b86415bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">add a mesh to the animation translator  <a href="#a51e3a7b5eed2e73b3df635b9b86415bf">More...</a><br /></td></tr>
 <tr class="separator:a51e3a7b5eed2e73b3df635b9b86415bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -377,6 +386,142 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ae2d1e88755fd90ca04e0149022eca509"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AL::usdmaya::fileio::AnimationTranslator::forceAddPlug </td>
+          <td>(</td>
+          <td class="paramtype">const MPlug &amp;&#160;</td>
+          <td class="paramname"><em>plug</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const UsdAttribute &amp;&#160;</td>
+          <td class="paramname"><em>attribute</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float&#160;</td>
+          <td class="paramname"><em>scale</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>add a scaled plug to the animation translator (if the plug is animated) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">plug</td><td>the maya attribute to test </td></tr>
+    <tr><td class="paramname">attribute</td><td>the corresponding maya attribute to write the anim data into if the plug is animated attribute can't be handled by generic DgNodeTranslator </td></tr>
+    <tr><td class="paramname">scale</td><td>a scale to apply to convert units if needed </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a61873b94c928402447a65258706ab1af"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AL::usdmaya::fileio::AnimationTranslator::forceAddPlug </td>
+          <td>(</td>
+          <td class="paramtype">const MPlug &amp;&#160;</td>
+          <td class="paramname"><em>plug</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const UsdAttribute &amp;&#160;</td>
+          <td class="paramname"><em>attribute</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>add an animated plug to the animation translator (if the plug is animated) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">plug</td><td>the maya attribute to test </td></tr>
+    <tr><td class="paramname">attribute</td><td>the corresponding maya attribute to write the anim data into if the plug is animated attribute can't be handled by generic DgNodeTranslator </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a606c61c7fd74c4c03ec742315d3c484d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AL::usdmaya::fileio::AnimationTranslator::forceAddTransformPlug </td>
+          <td>(</td>
+          <td class="paramtype">const MPlug &amp;&#160;</td>
+          <td class="paramname"><em>plug</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const UsdAttribute &amp;&#160;</td>
+          <td class="paramname"><em>attribute</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>add a transform plug to the animation translator (if the plug is animated) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">plug</td><td>the maya attribute to test </td></tr>
+    <tr><td class="paramname">attribute</td><td>the corresponding maya attribute to write the anim data into if the plug is animated attribute can't be handled by generic DgNodeTranslator </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="a84fc726d40dfcdc655052723c3a998f9"></a>
 <div class="memitem">
 <div class="memproto">
@@ -514,7 +659,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceAL.html">AL</a></li><li class="navelem"><b>usdmaya</b></li><li class="navelem"><b>fileio</b></li><li class="navelem"><a class="el" href="structAL_1_1usdmaya_1_1fileio_1_1AnimationTranslator.html">AnimationTranslator</a></li>
-    <li class="footer">Generated on Tue Jan 16 2018 16:47:28 for AL_USDMaya by
+    <li class="footer">Generated on Fri Feb 9 2018 18:12:38 for AL_USDMaya by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

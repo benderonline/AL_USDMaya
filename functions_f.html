@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">AL_USDMaya
-   &#160;<span id="projectnumber">0.26.a</span>
+   &#160;<span id="projectnumber">0.26.0</span>
    </div>
    <div id="projectbrief">USD to Maya Bridge</div>
   </td>
@@ -84,6 +84,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions_type.html"><span>Typedefs</span></a></li>
       <li><a href="functions_enum.html"><span>Enumerations</span></a></li>
       <li><a href="functions_eval.html"><span>Enumerator</span></a></li>
+      <li><a href="functions_rela.html"><span>Related&#160;Functions</span></a></li>
     </ul>
   </div>
   <div id="navrow4" class="tabs3">
@@ -149,24 +150,37 @@ $(document).ready(function(){initNavTree('functions_f.html','');});
 : <a class="el" href="classAL_1_1maya_1_1CommandGuiHelper.html#a1efbadfb1cf6edc8563f4000b60a40ed">AL::maya::CommandGuiHelper</a>
 , <a class="el" href="classAL_1_1maya_1_1NodeHelper.html#a7670bef2e60ec7cf0eeb0dac168b09a1">AL::maya::NodeHelper</a>
 </li>
+<li>fileNew()
+: <a class="el" href="classAL_1_1usdmaya_1_1Global.html#aae311aec7ad765b682a976757494718b">AL::usdmaya::Global</a>
+</li>
 <li>FileTranslatorOptions()
 : <a class="el" href="classAL_1_1maya_1_1FileTranslatorOptions.html#a1335480ab0d74d50b8d5ebf2126c32b2">AL::maya::FileTranslatorOptions</a>
 </li>
 <li>filterPrims()
 : <a class="el" href="classAL_1_1usdmaya_1_1nodes_1_1ProxyShape.html#ade5be7e89e423bc5c5918e26c17a2b71">AL::usdmaya::nodes::ProxyShape</a>
 </li>
-<li>findChildLayer()
-: <a class="el" href="classAL_1_1usdmaya_1_1nodes_1_1Layer.html#a6cfcaf9b4cb593fcac92e8482deb5974">AL::usdmaya::nodes::Layer</a>
+<li>findCallback()
+: <a class="el" href="classAL_1_1maya_1_1EventDispatcher.html#adceaaece46174928c15dcf6e0919f129">AL::maya::EventDispatcher</a>
+, <a class="el" href="classAL_1_1maya_1_1EventScheduler.html#ab9ad8e05cdc509cb5b45d88303eb8a4e">AL::maya::EventScheduler</a>
 </li>
 <li>findExcludedGeometry()
 : <a class="el" href="classAL_1_1usdmaya_1_1nodes_1_1ProxyShape.html#a3c2b83700017c82a7e1ff2f455a26931">AL::usdmaya::nodes::ProxyShape</a>
 </li>
 <li>findLayer()
-: <a class="el" href="classAL_1_1usdmaya_1_1nodes_1_1Layer.html#a87be7f6d692870184266c0af5780d2d0">AL::usdmaya::nodes::Layer</a>
-, <a class="el" href="classAL_1_1usdmaya_1_1nodes_1_1ProxyShape.html#a18d8ca915b6878e5ad38988e7fe9e94b">AL::usdmaya::nodes::ProxyShape</a>
+: <a class="el" href="classAL_1_1usdmaya_1_1nodes_1_1LayerDatabase.html#a09cbb6a83659f23ff57a446a74d7e46f">AL::usdmaya::nodes::LayerDatabase</a>
+, <a class="el" href="classAL_1_1usdmaya_1_1nodes_1_1LayerManager.html#a4d4f0ab443199749207560d497e8e5b2">AL::usdmaya::nodes::LayerManager</a>
 </li>
-<li>findLayerMayaName()
-: <a class="el" href="classAL_1_1usdmaya_1_1nodes_1_1ProxyShape.html#ab2b4400ddb08d0dc6c3e7c5835f9fede">AL::usdmaya::nodes::ProxyShape</a>
+<li>findManager()
+: <a class="el" href="classAL_1_1usdmaya_1_1nodes_1_1LayerManager.html#a5f94ce1e59d00fb09f9655d8ead7020e">AL::usdmaya::nodes::LayerManager</a>
+</li>
+<li>findNode()
+: <a class="el" href="classAL_1_1usdmaya_1_1nodes_1_1LayerManager.html#a6a09481f028f544d2f6a338da1902571">AL::usdmaya::nodes::LayerManager</a>
+</li>
+<li>findOrCreateManager()
+: <a class="el" href="classAL_1_1usdmaya_1_1nodes_1_1LayerManager.html#a87ae235ee97657d9b6eb25ea71731c56">AL::usdmaya::nodes::LayerManager</a>
+</li>
+<li>findOrCreateNode()
+: <a class="el" href="classAL_1_1usdmaya_1_1nodes_1_1LayerManager.html#aaa4cf12325d6e090c86fa34dc3f9586f">AL::usdmaya::nodes::LayerManager</a>
 </li>
 <li>findRequiredPath()
 : <a class="el" href="classAL_1_1usdmaya_1_1nodes_1_1ProxyShape.html#a9d0c61439cc2bc72e7f1fe5f52c54adc">AL::usdmaya::nodes::ProxyShape</a>
@@ -174,11 +188,20 @@ $(document).ready(function(){initNavTree('functions_f.html','');});
 <li>findSelectablePrims()
 : <a class="el" href="classAL_1_1usdmaya_1_1nodes_1_1ProxyShape.html#a4856130dcb18388de74aa08d06866b72">AL::usdmaya::nodes::ProxyShape</a>
 </li>
-<li>findSubLayer()
-: <a class="el" href="classAL_1_1usdmaya_1_1nodes_1_1Layer.html#ad21766023a3201d8ef05f1850c069cd9">AL::usdmaya::nodes::Layer</a>
-</li>
 <li>findTaggedPrims()
 : <a class="el" href="classAL_1_1usdmaya_1_1nodes_1_1ProxyShape.html#afb1c71b0d9b051707b39409ca91c71e8">AL::usdmaya::nodes::ProxyShape</a>
+</li>
+<li>forceAddPlug()
+: <a class="el" href="structAL_1_1usdmaya_1_1fileio_1_1AnimationTranslator.html#a61873b94c928402447a65258706ab1af">AL::usdmaya::fileio::AnimationTranslator</a>
+</li>
+<li>forceAddTransformPlug()
+: <a class="el" href="structAL_1_1usdmaya_1_1fileio_1_1AnimationTranslator.html#a606c61c7fd74c4c03ec742315d3c484d">AL::usdmaya::fileio::AnimationTranslator</a>
+</li>
+<li>freeInstance()
+: <a class="el" href="classAL_1_1maya_1_1MayaEventManager.html#a25eb5a0acdb3e215d3f46bbff7a378d4">AL::maya::MayaEventManager</a>
+</li>
+<li>freeScheduler()
+: <a class="el" href="classAL_1_1maya_1_1EventScheduler.html#ac77f9de49892ce5c17fca8d9fd8b571b">AL::maya::EventScheduler</a>
 </li>
 </ul>
 </div><!-- contents -->
@@ -186,7 +209,7 @@ $(document).ready(function(){initNavTree('functions_f.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Jan 16 2018 16:47:28 for AL_USDMaya by
+    <li class="footer">Generated on Fri Feb 9 2018 18:12:39 for AL_USDMaya by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

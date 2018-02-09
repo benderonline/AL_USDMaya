@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">AL_USDMaya
-   &#160;<span id="projectnumber">0.26.a</span>
+   &#160;<span id="projectnumber">0.26.0</span>
    </div>
    <div id="projectbrief">USD to Maya Bridge</div>
   </td>
@@ -111,10 +111,13 @@ $(document).ready(function(){initNavTree('group__nodes.html','');});
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAL_1_1usdmaya_1_1nodes_1_1Layer.html">AL::usdmaya::nodes::Layer</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The layer node stores a reference to an SdfLayer.  <a href="classAL_1_1usdmaya_1_1nodes_1_1Layer.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The layer node stores a reference to an SdfLayer. Obsolete. <a class="el" href="classAL_1_1usdmaya_1_1nodes_1_1LayerManager.html" title="The layer manager node handles serialization and deserialization of all layers used by all ProxyShape...">LayerManager</a> now used instead.  <a href="classAL_1_1usdmaya_1_1nodes_1_1Layer.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAL_1_1usdmaya_1_1nodes_1_1LayerVisitor.html">AL::usdmaya::nodes::LayerVisitor</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A class that follows the visitor pattern to walk through all layer nodes associated with the specified proxy shape node.  <a href="classAL_1_1usdmaya_1_1nodes_1_1LayerVisitor.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAL_1_1usdmaya_1_1nodes_1_1LayerDatabase.html">AL::usdmaya::nodes::LayerDatabase</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores layers, in a way that they may be looked up by the layer ref ptr, or by identifier Also, unlike boost::multi_index, we can have multiple identifiers per layer.  <a href="classAL_1_1usdmaya_1_1nodes_1_1LayerDatabase.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAL_1_1usdmaya_1_1nodes_1_1LayerManager.html">AL::usdmaya::nodes::LayerManager</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The layer manager node handles serialization and deserialization of all layers used by all ProxyShapes.  <a href="classAL_1_1usdmaya_1_1nodes_1_1LayerManager.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAL_1_1usdmaya_1_1nodes_1_1ProxyDrawOverride.html">AL::usdmaya::nodes::ProxyDrawOverride</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class provides the draw override for the USD proxy shape node.  <a href="classAL_1_1usdmaya_1_1nodes_1_1ProxyDrawOverride.html#details">More...</a><br /></td></tr>
@@ -139,7 +142,7 @@ Classes</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Jan 16 2018 16:47:27 for AL_USDMaya by
+    <li class="footer">Generated on Fri Feb 9 2018 18:12:36 for AL_USDMaya by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['stringpolicy',['StringPolicy',['../classAL_1_1maya_1_1CommandGuiHelper.html#ad5c7e51aa8292323fa55941fbf958c3d',1,'AL::maya::CommandGuiHelper']]]
+  ['interpolation',['Interpolation',['http://github.al.com.au/pages/documentation/shareBase/structAL_1_1RampInterpolator.html#a3f40f6e40bbdc25e1c75b84f03810f96',1,'AL::RampInterpolator']]]
 ];

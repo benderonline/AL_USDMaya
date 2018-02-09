@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">AL_USDMaya
-   &#160;<span id="projectnumber">0.26.a</span>
+   &#160;<span id="projectnumber">0.26.0</span>
    </div>
    <div id="projectbrief">USD to Maya Bridge</div>
   </td>
@@ -125,9 +125,10 @@ Inheritance diagram for AL::maya::NodeHelper:</div>
  <div class="center">
   <img src="classAL_1_1maya_1_1NodeHelper.png" usemap="#AL::maya::NodeHelper_map" alt=""/>
   <map id="AL::maya::NodeHelper_map" name="AL::maya::NodeHelper_map">
-<area href="classAL_1_1usdmaya_1_1nodes_1_1Layer.html" title="The layer node stores a reference to an SdfLayer. " alt="AL::usdmaya::nodes::Layer" shape="rect" coords="0,56,199,80"/>
-<area href="classAL_1_1usdmaya_1_1nodes_1_1ProxyShape.html" title="A custom proxy shape node that attaches itself to a USD file, and then renders it. The stage is held internally as a member variable, and it will be composed based on a change to the "filePath" attribute. " alt="AL::usdmaya::nodes::ProxyShape" shape="rect" coords="209,56,408,80"/>
-<area href="classAL_1_1usdmaya_1_1nodes_1_1Transform.html" title="The AL::usdmaya::nodes::Transform node is a custom transform node that allows you to manipulate a USD..." alt="AL::usdmaya::nodes::Transform" shape="rect" coords="418,56,617,80"/>
+<area href="classAL_1_1usdmaya_1_1nodes_1_1Layer.html" title="The layer node stores a reference to an SdfLayer. Obsolete. LayerManager now used instead..." alt="AL::usdmaya::nodes::Layer" shape="rect" coords="0,56,214,80"/>
+<area href="classAL_1_1usdmaya_1_1nodes_1_1LayerManager.html" title="The layer manager node handles serialization and deserialization of all layers used by all ProxyShape..." alt="AL::usdmaya::nodes::LayerManager" shape="rect" coords="224,56,438,80"/>
+<area href="classAL_1_1usdmaya_1_1nodes_1_1ProxyShape.html" title="A custom proxy shape node that attaches itself to a USD file, and then renders it. The stage is held internally as a member variable, and it will be composed based on a change to the "filePath" attribute. " alt="AL::usdmaya::nodes::ProxyShape" shape="rect" coords="448,56,662,80"/>
+<area href="classAL_1_1usdmaya_1_1nodes_1_1Transform.html" title="The AL::usdmaya::nodes::Transform node is a custom transform node that allows you to manipulate a USD..." alt="AL::usdmaya::nodes::Transform" shape="rect" coords="672,56,886,80"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -249,6 +250,13 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ac220ac89f9745eede796d196d5c3ce42"><td class="memItemLeft" align="right" valign="top">static MStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAL_1_1maya_1_1NodeHelper.html#ac220ac89f9745eede796d196d5c3ce42">outputDataValue</a> (MDataBlock &amp;dataBlock, const MObject &amp;attribute, MPxData *value)</td></tr>
 <tr class="memdesc:ac220ac89f9745eede796d196d5c3ce42"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="elRef" doxygen="/film/tools/packages/shareBase/11.1.37/CentOS-6.2_thru_7/AL_boost-1.55.0/doc/shareBase.tag:http://github.al.com.au/pages/documentation/shareBase/" href="http://github.al.com.au/pages/documentation/shareBase/classAL_1_1Set.html">Set</a> the output value of the specified attribute in the datablock.  <a href="#ac220ac89f9745eede796d196d5c3ce42">More...</a><br /></td></tr>
 <tr class="separator:ac220ac89f9745eede796d196d5c3ce42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab934bc70747f1eefbd3706445e5f7128"><td class="memItemLeft" align="right" valign="top">static MPxData *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAL_1_1maya_1_1NodeHelper.html#ab934bc70747f1eefbd3706445e5f7128">outputDataValue</a> (MDataBlock &amp;dataBlock, const MObject &amp;attribute)</td></tr>
+<tr class="memdesc:ab934bc70747f1eefbd3706445e5f7128"><td class="mdescLeft">&#160;</td><td class="mdescRight">get an output data value from the dataBlock from the specified attribute  <a href="#ab934bc70747f1eefbd3706445e5f7128">More...</a><br /></td></tr>
+<tr class="separator:ab934bc70747f1eefbd3706445e5f7128"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bd1441af4118104e887cee86607425d"><td class="memTemplParams" colspan="2">template&lt;typename MPxDataType &gt; </td></tr>
+<tr class="memitem:a1bd1441af4118104e887cee86607425d"><td class="memTemplItemLeft" align="right" valign="top">static MPxDataType *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classAL_1_1maya_1_1NodeHelper.html#a1bd1441af4118104e887cee86607425d">outputDataValue</a> (MDataBlock &amp;dataBlock, const MObject &amp;attribute)</td></tr>
+<tr class="memdesc:a1bd1441af4118104e887cee86607425d"><td class="mdescLeft">&#160;</td><td class="mdescRight">get an output data value from the dataBlock from the specified attribute  <a href="#a1bd1441af4118104e887cee86607425d">More...</a><br /></td></tr>
+<tr class="separator:a1bd1441af4118104e887cee86607425d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a079421fdd468ddd10d386bf77d610f89"><td class="memItemLeft" align="right" valign="top">static MPxData *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAL_1_1maya_1_1NodeHelper.html#a079421fdd468ddd10d386bf77d610f89">createData</a> (const MTypeId &amp;dataTypeId, MObject &amp;data)</td></tr>
 <tr class="memdesc:a079421fdd468ddd10d386bf77d610f89"><td class="mdescLeft">&#160;</td><td class="mdescRight">helper method to create new data objects of the specified data type  <a href="#a079421fdd468ddd10d386bf77d610f89">More...</a><br /></td></tr>
 <tr class="separator:a079421fdd468ddd10d386bf77d610f89"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -567,9 +575,9 @@ Add Dynamic Attributes to Node</h2></td></tr>
 <div class="line"></div>
 <div class="line">  MStatus compute(<span class="keyword">const</span> MPlug&amp; plug, MDataBlock&amp; dataBlock) <span class="keyword">override</span>;</div>
 <div class="line"></div>
-<div class="line">  <a class="code" href="group__mayagui.html#gacd3da57d11633aff3c79151b04e344be">AL_DECL_ATTRIBUTE</a>(input0);</div>
-<div class="line">  <a class="code" href="group__mayagui.html#gacd3da57d11633aff3c79151b04e344be">AL_DECL_ATTRIBUTE</a>(input1);</div>
-<div class="line">  <a class="code" href="group__mayagui.html#gacd3da57d11633aff3c79151b04e344be">AL_DECL_ATTRIBUTE</a>(output);</div>
+<div class="line">  AL_DECL_ATTRIBUTE(input0);</div>
+<div class="line">  AL_DECL_ATTRIBUTE(input1);</div>
+<div class="line">  AL_DECL_ATTRIBUTE(output);</div>
 <div class="line">};</div>
 </div><!-- fragment --><p>And then in the cpp file...</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &quot;Add2Floats.h&quot;</span></div>
@@ -6806,6 +6814,98 @@ template&lt;typename MPxDataType &gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="ab934bc70747f1eefbd3706445e5f7128"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static MPxData* AL::maya::NodeHelper::outputDataValue </td>
+          <td>(</td>
+          <td class="paramtype">MDataBlock &amp;&#160;</td>
+          <td class="paramname"><em>dataBlock</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const MObject &amp;&#160;</td>
+          <td class="paramname"><em>attribute</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>get an output data value from the dataBlock from the specified attribute </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dataBlock</td><td>the data block to get the value from </td></tr>
+    <tr><td class="paramname">attribute</td><td>the handle to the attribute to get an MPxData for </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the value </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>If the value could not be queried, and error will be logged to std::cerr Useful when you want to modify something on the underlying MPxData, without creating / setting an entirely new instance of the MPxData </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a1bd1441af4118104e887cee86607425d"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename MPxDataType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static MPxDataType* AL::maya::NodeHelper::outputDataValue </td>
+          <td>(</td>
+          <td class="paramtype">MDataBlock &amp;&#160;</td>
+          <td class="paramname"><em>dataBlock</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const MObject &amp;&#160;</td>
+          <td class="paramname"><em>attribute</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>get an output data value from the dataBlock from the specified attribute </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dataBlock</td><td>the data block to get the value from </td></tr>
+    <tr><td class="paramname">attribute</td><td>the handle to the attribute to get an MPxData subclass for </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the value </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>If the value could not be queried, and error will be logged to std::cerr Useful when you want to modify something on the underlying MPxData subclass, without creating / setting an entirely new instance of the MPxData subclass </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="ac41263dc297e8885cac29113df9be569"></a>
 <div class="memitem">
 <div class="memproto">
@@ -7679,7 +7779,7 @@ template&lt;typename datatype &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceAL.html">AL</a></li><li class="navelem"><b>maya</b></li><li class="navelem"><a class="el" href="classAL_1_1maya_1_1NodeHelper.html">NodeHelper</a></li>
-    <li class="footer">Generated on Tue Jan 16 2018 16:47:27 for AL_USDMaya by
+    <li class="footer">Generated on Fri Feb 9 2018 18:12:37 for AL_USDMaya by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

@@ -5,8 +5,10 @@ var dir_92aaad08322167cef7c963291cf4c44c =
     [ "CommandGuiHelper.h", "CommandGuiHelper_8h_source.html", null ],
     [ "Common.h", "maya_2Common_8h_source.html", null ],
     [ "DgNodeHelper.h", "DgNodeHelper_8h_source.html", null ],
+    [ "EventHandler.h", "EventHandler_8h_source.html", null ],
     [ "FileTranslatorBase.h", "FileTranslatorBase_8h.html", "FileTranslatorBase_8h" ],
     [ "FileTranslatorOptions.h", "FileTranslatorOptions_8h_source.html", null ],
+    [ "MayaEventManager.h", "MayaEventManager_8h_source.html", null ],
     [ "MenuBuilder.h", "MenuBuilder_8h_source.html", null ],
     [ "NodeHelper.h", "NodeHelper_8h_source.html", null ],
     [ "SIMD.h", "SIMD_8h_source.html", null ]

@@ -29,6 +29,7 @@ var classAL_1_1usdmaya_1_1nodes_1_1TransformationMatrix =
     [ "primHasTranslation", "classAL_1_1usdmaya_1_1nodes_1_1TransformationMatrix.html#ae38af56896d2d598694a231c943744ab", null ],
     [ "pushPrimToMatrix", "classAL_1_1usdmaya_1_1nodes_1_1TransformationMatrix.html#af408204844c68a6317db3b6c82064622", null ],
     [ "pushToPrim", "classAL_1_1usdmaya_1_1nodes_1_1TransformationMatrix.html#a990311b9c1da5e2fd2bdbcea541a2d88", null ],
+    [ "pushToPrimAvailable", "classAL_1_1usdmaya_1_1nodes_1_1TransformationMatrix.html#a15d0f98fe0d295af281aedf154d48d87", null ],
     [ "pushToPrimEnabled", "classAL_1_1usdmaya_1_1nodes_1_1TransformationMatrix.html#ad4a6f175425f2cc98ed34a45a11061ae", null ],
     [ "readAnimatedValues", "classAL_1_1usdmaya_1_1nodes_1_1TransformationMatrix.html#ac0e08b7e6b395643d764b92b2c7df730", null ],
     [ "setLocalTranslationOffset", "classAL_1_1usdmaya_1_1nodes_1_1TransformationMatrix.html#a1cfb5683ae2c44369a5892c95a4bbd0b", null ],

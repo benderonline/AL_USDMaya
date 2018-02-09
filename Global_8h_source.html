@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">AL_USDMaya
-   &#160;<span id="projectnumber">0.26.a</span>
+   &#160;<span id="projectnumber">0.26.0</span>
    </div>
    <div id="projectbrief">USD to Maya Bridge</div>
   </td>
@@ -125,7 +125,7 @@ $(document).ready(function(){initNavTree('Global_8h_source.html','');});
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;AL/usdmaya/Common.h&quot;</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;maya/MSceneMessage.h&quot;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;AL/maya/MayaEventManager.h&quot;</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">namespace </span>AL {</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">namespace </span>usdmaya {</div>
@@ -140,29 +140,50 @@ $(document).ready(function(){initNavTree('Global_8h_source.html','');});
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classAL_1_1usdmaya_1_1Global.html#aeee753637af6d7be957a48d7a4015047">onPluginUnload</a>();</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keyword">static</span> MCallbackId m_preSave;  </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keyword">static</span> MCallbackId m_postSave; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keyword">static</span> MCallbackId m_preOpen;  </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keyword">static</span> MCallbackId m_postOpen; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keyword">static</span> MCallbackId m_fileNew;  </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;};</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classAL_1_1usdmaya_1_1Global.html#a06435f0680d04dae038090bdd011b4c7">   39</a></span>&#160;  <span class="keyword">static</span> <a class="code" href="group__events.html#gafa37852d8ebb3c676750da2dd0fa50bd">maya::CallbackId</a> <a class="code" href="classAL_1_1usdmaya_1_1Global.html#a06435f0680d04dae038090bdd011b4c7">preSave</a>()</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    { <span class="keywordflow">return</span> m_preSave; }</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classAL_1_1usdmaya_1_1Global.html#aa9f11d4e9029f2fe9ca1b53ddc54ac4b">   43</a></span>&#160;  <span class="keyword">static</span> <a class="code" href="group__events.html#gafa37852d8ebb3c676750da2dd0fa50bd">maya::CallbackId</a> <a class="code" href="classAL_1_1usdmaya_1_1Global.html#aa9f11d4e9029f2fe9ca1b53ddc54ac4b">postSave</a>()</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    { <span class="keywordflow">return</span> m_postSave; }</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;} <span class="comment">// usdmaya</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">//----------------------------------------------------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;} <span class="comment">// al</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">//----------------------------------------------------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="classAL_1_1usdmaya_1_1Global.html#add52bb292eb0fc2987428fb5692dd251">   47</a></span>&#160;  <span class="keyword">static</span> <a class="code" href="group__events.html#gafa37852d8ebb3c676750da2dd0fa50bd">maya::CallbackId</a> <a class="code" href="classAL_1_1usdmaya_1_1Global.html#add52bb292eb0fc2987428fb5692dd251">preRead</a>()</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    { <span class="keywordflow">return</span> m_preRead; }</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="classAL_1_1usdmaya_1_1Global.html#a2f27c03bf80c11ea6adb51de572dd0df">   51</a></span>&#160;  <span class="keyword">static</span> <a class="code" href="group__events.html#gafa37852d8ebb3c676750da2dd0fa50bd">maya::CallbackId</a> <a class="code" href="classAL_1_1usdmaya_1_1Global.html#a2f27c03bf80c11ea6adb51de572dd0df">postRead</a>()</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    { <span class="keywordflow">return</span> m_postRead; }</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classAL_1_1usdmaya_1_1Global.html#aae311aec7ad765b682a976757494718b">   55</a></span>&#160;  <span class="keyword">static</span> <a class="code" href="group__events.html#gafa37852d8ebb3c676750da2dd0fa50bd">maya::CallbackId</a> <a class="code" href="classAL_1_1usdmaya_1_1Global.html#aae311aec7ad765b682a976757494718b">fileNew</a>()</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    { <span class="keywordflow">return</span> m_fileNew; }</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keyword">static</span> <a class="code" href="group__events.html#gafa37852d8ebb3c676750da2dd0fa50bd">maya::CallbackId</a> m_preSave;  </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keyword">static</span> <a class="code" href="group__events.html#gafa37852d8ebb3c676750da2dd0fa50bd">maya::CallbackId</a> m_postSave; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keyword">static</span> <a class="code" href="group__events.html#gafa37852d8ebb3c676750da2dd0fa50bd">maya::CallbackId</a> m_preRead;  </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keyword">static</span> <a class="code" href="group__events.html#gafa37852d8ebb3c676750da2dd0fa50bd">maya::CallbackId</a> m_postRead; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keyword">static</span> <a class="code" href="group__events.html#gafa37852d8ebb3c676750da2dd0fa50bd">maya::CallbackId</a> m_fileNew;  </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;};</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;} <span class="comment">// usdmaya</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment">//----------------------------------------------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;} <span class="comment">// al</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">//----------------------------------------------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
 <div class="ttc" id="classAL_1_1usdmaya_1_1Global_html"><div class="ttname"><a href="classAL_1_1usdmaya_1_1Global.html">AL::usdmaya::Global</a></div><div class="ttdoc">This class wraps all of the global state/mechanisms needed to integrate USD and Maya. This mainly handles things such as onFileNew, preFileSave, etc. </div><div class="ttdef"><b>Definition:</b> Global.h:28</div></div>
+<div class="ttc" id="classAL_1_1usdmaya_1_1Global_html_a06435f0680d04dae038090bdd011b4c7"><div class="ttname"><a href="classAL_1_1usdmaya_1_1Global.html#a06435f0680d04dae038090bdd011b4c7">AL::usdmaya::Global::preSave</a></div><div class="ttdeci">static maya::CallbackId preSave()</div><div class="ttdoc">pre save callback </div><div class="ttdef"><b>Definition:</b> Global.h:39</div></div>
+<div class="ttc" id="classAL_1_1usdmaya_1_1Global_html_aa9f11d4e9029f2fe9ca1b53ddc54ac4b"><div class="ttname"><a href="classAL_1_1usdmaya_1_1Global.html#aa9f11d4e9029f2fe9ca1b53ddc54ac4b">AL::usdmaya::Global::postSave</a></div><div class="ttdeci">static maya::CallbackId postSave()</div><div class="ttdoc">post save callback </div><div class="ttdef"><b>Definition:</b> Global.h:43</div></div>
 <div class="ttc" id="classAL_1_1usdmaya_1_1Global_html_a25c09948e25ae3b6f0226da8d7fe36ef"><div class="ttname"><a href="classAL_1_1usdmaya_1_1Global.html#a25c09948e25ae3b6f0226da8d7fe36ef">AL::usdmaya::Global::onPluginLoad</a></div><div class="ttdeci">static void onPluginLoad()</div><div class="ttdoc">initialise the global state </div></div>
+<div class="ttc" id="classAL_1_1usdmaya_1_1Global_html_add52bb292eb0fc2987428fb5692dd251"><div class="ttname"><a href="classAL_1_1usdmaya_1_1Global.html#add52bb292eb0fc2987428fb5692dd251">AL::usdmaya::Global::preRead</a></div><div class="ttdeci">static maya::CallbackId preRead()</div><div class="ttdoc">pre open callback </div><div class="ttdef"><b>Definition:</b> Global.h:47</div></div>
 <div class="ttc" id="classAL_1_1usdmaya_1_1Global_html_aeee753637af6d7be957a48d7a4015047"><div class="ttname"><a href="classAL_1_1usdmaya_1_1Global.html#aeee753637af6d7be957a48d7a4015047">AL::usdmaya::Global::onPluginUnload</a></div><div class="ttdeci">static void onPluginUnload()</div><div class="ttdoc">uninitialise the global state </div></div>
+<div class="ttc" id="classAL_1_1usdmaya_1_1Global_html_aae311aec7ad765b682a976757494718b"><div class="ttname"><a href="classAL_1_1usdmaya_1_1Global.html#aae311aec7ad765b682a976757494718b">AL::usdmaya::Global::fileNew</a></div><div class="ttdeci">static maya::CallbackId fileNew()</div><div class="ttdoc">callback used to flush the USD caches after a file new </div><div class="ttdef"><b>Definition:</b> Global.h:55</div></div>
+<div class="ttc" id="classAL_1_1usdmaya_1_1Global_html_a2f27c03bf80c11ea6adb51de572dd0df"><div class="ttname"><a href="classAL_1_1usdmaya_1_1Global.html#a2f27c03bf80c11ea6adb51de572dd0df">AL::usdmaya::Global::postRead</a></div><div class="ttdeci">static maya::CallbackId postRead()</div><div class="ttdoc">post open callback </div><div class="ttdef"><b>Definition:</b> Global.h:51</div></div>
+<div class="ttc" id="group__events_html_gafa37852d8ebb3c676750da2dd0fa50bd"><div class="ttname"><a href="group__events.html#gafa37852d8ebb3c676750da2dd0fa50bd">AL::maya::CallbackId</a></div><div class="ttdeci">uint64_t CallbackId</div><div class="ttdoc">An identifier used to represent a callback. Within the 64bit value 3 pieces of information are encode...</div><div class="ttdef"><b>Definition:</b> EventHandler.h:64</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_c85d3e3c5052e9ad9ce18c6863244a25.html">lib</a></li><li class="navelem"><a class="el" href="dir_1bb7ef9dbabe305f6710c4d5a2d124d7.html">AL_USDMaya</a></li><li class="navelem"><a class="el" href="dir_1718e17ee0fed015a6dbff620e7e9f68.html">AL</a></li><li class="navelem"><a class="el" href="dir_bfd18ef9f7ca57c4b661440a6abf5ddf.html">usdmaya</a></li><li class="navelem"><b>Global.h</b></li>
-    <li class="footer">Generated on Tue Jan 16 2018 16:47:27 for AL_USDMaya by
+    <li class="footer">Generated on Fri Feb 9 2018 18:12:36 for AL_USDMaya by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

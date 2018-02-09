@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">AL_USDMaya
-   &#160;<span id="projectnumber">0.26.a</span>
+   &#160;<span id="projectnumber">0.26.0</span>
    </div>
    <div id="projectbrief">USD to Maya Bridge</div>
   </td>
@@ -84,6 +84,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions_type.html"><span>Typedefs</span></a></li>
       <li><a href="functions_enum.html"><span>Enumerations</span></a></li>
       <li><a href="functions_eval.html"><span>Enumerator</span></a></li>
+      <li><a href="functions_rela.html"><span>Related&#160;Functions</span></a></li>
     </ul>
   </div>
   <div id="navrow4" class="tabs3">
@@ -151,6 +152,12 @@ $(document).ready(function(){initNavTree('functions_o.html','');});
 <li>objectHandle()
 : <a class="el" href="structAL_1_1usdmaya_1_1fileio_1_1translators_1_1TranslatorContext_1_1PrimLookup.html#a2c2bbb68c599402326e4ec491365105a">AL::usdmaya::fileio::translators::TranslatorContext::PrimLookup</a>
 </li>
+<li>onCallbackCreated()
+: <a class="el" href="classAL_1_1maya_1_1CustomEventHandler.html#a20d28c87d0851498b649e482bf179ea4">AL::maya::CustomEventHandler</a>
+</li>
+<li>onCallbackDestroyed()
+: <a class="el" href="classAL_1_1maya_1_1CustomEventHandler.html#a76e5738c0db0db775ac16426346c216c">AL::maya::CustomEventHandler</a>
+</li>
 <li>onPluginLoad()
 : <a class="el" href="classAL_1_1usdmaya_1_1Global.html#a25c09948e25ae3b6f0226da8d7fe36ef">AL::usdmaya::Global</a>
 </li>
@@ -161,10 +168,7 @@ $(document).ready(function(){initNavTree('functions_o.html','');});
 : <a class="el" href="classAL_1_1usdmaya_1_1nodes_1_1ProxyShape.html#a289a22574cdd36d316c51c7754373812">AL::usdmaya::nodes::ProxyShape</a>
 </li>
 <li>onPrimResync()
-: <a class="el" href="classAL_1_1usdmaya_1_1nodes_1_1ProxyShape.html#a818953aac7fa11e22afc90084db0d23a">AL::usdmaya::nodes::ProxyShape</a>
-</li>
-<li>onVisit()
-: <a class="el" href="classAL_1_1usdmaya_1_1nodes_1_1LayerVisitor.html#ae2efdeb023aa0e407702a6edbf0535d1">AL::usdmaya::nodes::LayerVisitor</a>
+: <a class="el" href="classAL_1_1usdmaya_1_1nodes_1_1ProxyShape.html#a3751304bcb814d05ba69f42fa64b3475">AL::usdmaya::nodes::ProxyShape</a>
 </li>
 <li>operator bool()
 : <a class="el" href="classAL_1_1usdmaya_1_1fileio_1_1Import.html#a33e76d09841a88c3eeb676d8973fe6df">AL::usdmaya::fileio::Import</a>
@@ -172,6 +176,14 @@ $(document).ready(function(){initNavTree('functions_o.html','');});
 <li>operator()()
 : <a class="el" href="structAL_1_1usdmaya_1_1fileio_1_1translators_1_1TranslatorContext_1_1value__compare.html#a20a8d135db9cea5d702636ceac89cbe3">AL::usdmaya::fileio::translators::TranslatorContext::value_compare</a>
 , <a class="el" href="structAL_1_1usdmaya_1_1guid__compare.html#abcbaafe1b4092facd51015caacdff670">AL::usdmaya::guid_compare</a>
+</li>
+<li>operator&lt;()
+: <a class="el" href="classAL_1_1maya_1_1Callback.html#a12bec040cc0677b4daea269f0bc3936f">AL::maya::Callback</a>
+, <a class="el" href="classAL_1_1maya_1_1EventDispatcher.html#a7336f59163d4626d01c8d93b886b4b07">AL::maya::EventDispatcher</a>
+</li>
+<li>operator=()
+: <a class="el" href="classAL_1_1maya_1_1Callback.html#ac292325070ed187ad667195daeb8f36d">AL::maya::Callback</a>
+, <a class="el" href="classAL_1_1maya_1_1EventDispatcher.html#a8cb427e061cb4d4cece86d0d7fe444af">AL::maya::EventDispatcher</a>
 </li>
 <li>operator==()
 : <a class="el" href="classAL_1_1maya_1_1ProfilerSectionPath.html#acd3f240199405bab2732226beee1d017">AL::maya::ProfilerSectionPath</a>
@@ -190,7 +202,7 @@ $(document).ready(function(){initNavTree('functions_o.html','');});
 : <a class="el" href="classAL_1_1maya_1_1NodeHelper.html#a3eab7f2a05c8f851e132b2c9eb0c69f8">AL::maya::NodeHelper</a>
 </li>
 <li>outputDataValue()
-: <a class="el" href="classAL_1_1maya_1_1NodeHelper.html#ac220ac89f9745eede796d196d5c3ce42">AL::maya::NodeHelper</a>
+: <a class="el" href="classAL_1_1maya_1_1NodeHelper.html#a1bd1441af4118104e887cee86607425d">AL::maya::NodeHelper</a>
 </li>
 <li>outputDoubleValue()
 : <a class="el" href="classAL_1_1maya_1_1NodeHelper.html#ac41263dc297e8885cac29113df9be569">AL::maya::NodeHelper</a>
@@ -240,7 +252,7 @@ $(document).ready(function(){initNavTree('functions_o.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Jan 16 2018 16:47:28 for AL_USDMaya by
+    <li class="footer">Generated on Fri Feb 9 2018 18:12:39 for AL_USDMaya by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

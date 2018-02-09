@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">AL_USDMaya
-   &#160;<span id="projectnumber">0.26.a</span>
+   &#160;<span id="projectnumber">0.26.0</span>
    </div>
    <div id="projectbrief">USD to Maya Bridge</div>
   </td>
@@ -291,66 +291,67 @@ $(document).ready(function(){initNavTree('ProxyShapeCommands_8h_source.html','')
 <div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;{</div>
 <div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;  <a class="code" href="structAL_1_1usdmaya_1_1nodes_1_1SelectionUndoHelper.html">nodes::SelectionUndoHelper</a>* m_helper;</div>
 <div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;  ~<a class="code" href="classAL_1_1usdmaya_1_1cmds_1_1ProxyShapeSelect.html">ProxyShapeSelect</a>() { <span class="keyword">delete</span> m_helper; }</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;  AL_MAYA_DECLARE_COMMAND();</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;  <span class="keywordtype">bool</span> isUndoable() <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;  MStatus doIt(<span class="keyword">const</span> MArgList&amp; args) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;  MStatus undoIt() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;  MStatus redoIt() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;};</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;<span class="comment">//----------------------------------------------------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;<span class="comment"></span><span class="comment">//----------------------------------------------------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00233"></a><span class="lineno"><a class="line" href="classAL_1_1usdmaya_1_1cmds_1_1ProxyShapePostSelect.html">  233</a></span>&#160;<span class="keyword">class </span><a class="code" href="classAL_1_1usdmaya_1_1cmds_1_1ProxyShapePostSelect.html">ProxyShapePostSelect</a></div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;  : <span class="keyword">public</span> <a class="code" href="classAL_1_1usdmaya_1_1cmds_1_1ProxyShapeCommandBase.html">ProxyShapeCommandBase</a></div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;{</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;  <a class="code" href="classAL_1_1usdmaya_1_1nodes_1_1ProxyShape.html">nodes::ProxyShape</a>* m_proxy;</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;  ~<a class="code" href="classAL_1_1usdmaya_1_1cmds_1_1ProxyShapePostSelect.html">ProxyShapePostSelect</a>() {}</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;  AL_MAYA_DECLARE_COMMAND();</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;  <span class="keywordtype">bool</span> isUndoable() <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;  MStatus doIt(<span class="keyword">const</span> MArgList&amp; args) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;  MStatus undoIt() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;  MStatus redoIt() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;};</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;<span class="comment">//----------------------------------------------------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;<span class="comment"></span><span class="comment">//----------------------------------------------------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00251"></a><span class="lineno"><a class="line" href="classAL_1_1usdmaya_1_1cmds_1_1InternalProxyShapeSelect.html">  251</a></span>&#160;<span class="keyword">class </span><a class="code" href="classAL_1_1usdmaya_1_1cmds_1_1InternalProxyShapeSelect.html">InternalProxyShapeSelect</a></div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;  : <span class="keyword">public</span> <a class="code" href="classAL_1_1usdmaya_1_1cmds_1_1ProxyShapeCommandBase.html">ProxyShapeCommandBase</a></div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;{</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;  <a class="code" href="classAL_1_1usdmaya_1_1nodes_1_1ProxyShape.html">nodes::ProxyShape</a>* m_proxy;</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;  <a class="code" href="classAL_1_1usdmaya_1_1nodes_1_1SelectionList.html">nodes::SelectionList</a> m_previous;</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;  <a class="code" href="classAL_1_1usdmaya_1_1nodes_1_1SelectionList.html">nodes::SelectionList</a> m_new;</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;  AL_MAYA_DECLARE_COMMAND();</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;  <span class="keywordtype">bool</span> isUndoable() <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;  MStatus doIt(<span class="keyword">const</span> MArgList&amp; args) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;  MStatus undoIt() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;  MStatus redoIt() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;};</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__commands.html#ga96ed2b3397cc582bdefe39a5f528a7c0">constructProxyShapeCommandGuis</a>();</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;<span class="comment">//----------------------------------------------------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;} <span class="comment">// cmds</span></div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;} <span class="comment">// usdmaya</span></div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;} <span class="comment">// AL</span></div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;<span class="comment">//----------------------------------------------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;  <a class="code" href="classAL_1_1usdmaya_1_1cmds_1_1ProxyShapeSelect.html">ProxyShapeSelect</a> () : m_helper(0) {}</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;  ~<a class="code" href="classAL_1_1usdmaya_1_1cmds_1_1ProxyShapeSelect.html">ProxyShapeSelect</a>() { <span class="keyword">delete</span> m_helper; }</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;  AL_MAYA_DECLARE_COMMAND();</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;  <span class="keywordtype">bool</span> isUndoable() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;  MStatus doIt(<span class="keyword">const</span> MArgList&amp; args) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;  MStatus undoIt() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;  MStatus redoIt() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;};</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;<span class="comment">//----------------------------------------------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;<span class="comment"></span><span class="comment">//----------------------------------------------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00234"></a><span class="lineno"><a class="line" href="classAL_1_1usdmaya_1_1cmds_1_1ProxyShapePostSelect.html">  234</a></span>&#160;<span class="keyword">class </span><a class="code" href="classAL_1_1usdmaya_1_1cmds_1_1ProxyShapePostSelect.html">ProxyShapePostSelect</a></div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;  : <span class="keyword">public</span> <a class="code" href="classAL_1_1usdmaya_1_1cmds_1_1ProxyShapeCommandBase.html">ProxyShapeCommandBase</a></div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;{</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;  <a class="code" href="classAL_1_1usdmaya_1_1nodes_1_1ProxyShape.html">nodes::ProxyShape</a>* m_proxy;</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;  ~<a class="code" href="classAL_1_1usdmaya_1_1cmds_1_1ProxyShapePostSelect.html">ProxyShapePostSelect</a>() {}</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;  AL_MAYA_DECLARE_COMMAND();</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;  <span class="keywordtype">bool</span> isUndoable() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;  MStatus doIt(<span class="keyword">const</span> MArgList&amp; args) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;  MStatus undoIt() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;  MStatus redoIt() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;};</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;<span class="comment">//----------------------------------------------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;<span class="comment"></span><span class="comment">//----------------------------------------------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00252"></a><span class="lineno"><a class="line" href="classAL_1_1usdmaya_1_1cmds_1_1InternalProxyShapeSelect.html">  252</a></span>&#160;<span class="keyword">class </span><a class="code" href="classAL_1_1usdmaya_1_1cmds_1_1InternalProxyShapeSelect.html">InternalProxyShapeSelect</a></div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;  : <span class="keyword">public</span> <a class="code" href="classAL_1_1usdmaya_1_1cmds_1_1ProxyShapeCommandBase.html">ProxyShapeCommandBase</a></div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;{</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;  <a class="code" href="classAL_1_1usdmaya_1_1nodes_1_1ProxyShape.html">nodes::ProxyShape</a>* m_proxy;</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;  <a class="code" href="classAL_1_1usdmaya_1_1nodes_1_1SelectionList.html">nodes::SelectionList</a> m_previous;</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;  <a class="code" href="classAL_1_1usdmaya_1_1nodes_1_1SelectionList.html">nodes::SelectionList</a> m_new;</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;  AL_MAYA_DECLARE_COMMAND();</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;  <span class="keywordtype">bool</span> isUndoable() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;  MStatus doIt(<span class="keyword">const</span> MArgList&amp; args) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;  MStatus undoIt() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;  MStatus redoIt() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;};</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__commands.html#ga96ed2b3397cc582bdefe39a5f528a7c0">constructProxyShapeCommandGuis</a>();</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;<span class="comment">//----------------------------------------------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;} <span class="comment">// cmds</span></div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;} <span class="comment">// usdmaya</span></div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;} <span class="comment">// AL</span></div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;<span class="comment">//----------------------------------------------------------------------------------------------------------------------</span></div>
 <div class="ttc" id="classAL_1_1usdmaya_1_1cmds_1_1ProxyShapeCommandBase_html_a38a2909f806683499d3486443a2ba345"><div class="ttname"><a href="classAL_1_1usdmaya_1_1cmds_1_1ProxyShapeCommandBase.html#a38a2909f806683499d3486443a2ba345">AL::usdmaya::cmds::ProxyShapeCommandBase::getShapePath</a></div><div class="ttdeci">MDagPath getShapePath(const MArgDatabase &amp;args)</div><div class="ttdoc">find the proxy shape node </div></div>
 <div class="ttc" id="classAL_1_1usdmaya_1_1cmds_1_1ProxyShapeResync_html"><div class="ttname"><a href="classAL_1_1usdmaya_1_1cmds_1_1ProxyShapeResync.html">AL::usdmaya::cmds::ProxyShapeResync</a></div><div class="ttdoc">ProxyShapeResync. </div><div class="ttdef"><b>Definition:</b> ProxyShapeCommands.h:195</div></div>
-<div class="ttc" id="classAL_1_1usdmaya_1_1nodes_1_1ProxyShape_html"><div class="ttname"><a href="classAL_1_1usdmaya_1_1nodes_1_1ProxyShape.html">AL::usdmaya::nodes::ProxyShape</a></div><div class="ttdoc">A custom proxy shape node that attaches itself to a USD file, and then renders it. The stage is held internally as a member variable, and it will be composed based on a change to the "filePath" attribute. </div><div class="ttdef"><b>Definition:</b> ProxyShape.h:208</div></div>
+<div class="ttc" id="classAL_1_1usdmaya_1_1nodes_1_1ProxyShape_html"><div class="ttname"><a href="classAL_1_1usdmaya_1_1nodes_1_1ProxyShape.html">AL::usdmaya::nodes::ProxyShape</a></div><div class="ttdoc">A custom proxy shape node that attaches itself to a USD file, and then renders it. The stage is held internally as a member variable, and it will be composed based on a change to the "filePath" attribute. </div><div class="ttdef"><b>Definition:</b> ProxyShape.h:238</div></div>
 <div class="ttc" id="structAL_1_1usdmaya_1_1fileio_1_1ImporterParams_html"><div class="ttname"><a href="structAL_1_1usdmaya_1_1fileio_1_1ImporterParams.html">AL::usdmaya::fileio::ImporterParams</a></div><div class="ttdoc">parameters for the importer </div><div class="ttdef"><b>Definition:</b> ImportParams.h:37</div></div>
 <div class="ttc" id="group__commands_html_ga96ed2b3397cc582bdefe39a5f528a7c0"><div class="ttname"><a href="group__commands.html#ga96ed2b3397cc582bdefe39a5f528a7c0">AL::usdmaya::cmds::constructProxyShapeCommandGuis</a></div><div class="ttdeci">void constructProxyShapeCommandGuis()</div><div class="ttdoc">This function will generate all of the MEL script menus, and the option boxes, for all of the proxy s...</div></div>
-<div class="ttc" id="classAL_1_1usdmaya_1_1cmds_1_1ProxyShapePostSelect_html"><div class="ttname"><a href="classAL_1_1usdmaya_1_1cmds_1_1ProxyShapePostSelect.html">AL::usdmaya::cmds::ProxyShapePostSelect</a></div><div class="ttdoc">ProxyShapeSelect. </div><div class="ttdef"><b>Definition:</b> ProxyShapeCommands.h:233</div></div>
+<div class="ttc" id="classAL_1_1usdmaya_1_1cmds_1_1ProxyShapePostSelect_html"><div class="ttname"><a href="classAL_1_1usdmaya_1_1cmds_1_1ProxyShapePostSelect.html">AL::usdmaya::cmds::ProxyShapePostSelect</a></div><div class="ttdoc">ProxyShapeSelect. </div><div class="ttdef"><b>Definition:</b> ProxyShapeCommands.h:234</div></div>
 <div class="ttc" id="classAL_1_1usdmaya_1_1cmds_1_1ProxyShapeSelect_html"><div class="ttname"><a href="classAL_1_1usdmaya_1_1cmds_1_1ProxyShapeSelect.html">AL::usdmaya::cmds::ProxyShapeSelect</a></div><div class="ttdoc">ProxyShapeSelect. </div><div class="ttdef"><b>Definition:</b> ProxyShapeCommands.h:215</div></div>
-<div class="ttc" id="classAL_1_1usdmaya_1_1cmds_1_1InternalProxyShapeSelect_html"><div class="ttname"><a href="classAL_1_1usdmaya_1_1cmds_1_1InternalProxyShapeSelect.html">AL::usdmaya::cmds::InternalProxyShapeSelect</a></div><div class="ttdoc">InternalProxyShapeSelect. </div><div class="ttdef"><b>Definition:</b> ProxyShapeCommands.h:251</div></div>
+<div class="ttc" id="classAL_1_1usdmaya_1_1cmds_1_1InternalProxyShapeSelect_html"><div class="ttname"><a href="classAL_1_1usdmaya_1_1cmds_1_1InternalProxyShapeSelect.html">AL::usdmaya::cmds::InternalProxyShapeSelect</a></div><div class="ttdoc">InternalProxyShapeSelect. </div><div class="ttdef"><b>Definition:</b> ProxyShapeCommands.h:252</div></div>
 <div class="ttc" id="classAL_1_1usdmaya_1_1cmds_1_1ProxyShapeCommandBase_html_a786ba621119ef09e1cc35f1a48b9d8f0"><div class="ttname"><a href="classAL_1_1usdmaya_1_1cmds_1_1ProxyShapeCommandBase.html#a786ba621119ef09e1cc35f1a48b9d8f0">AL::usdmaya::cmds::ProxyShapeCommandBase::makeDatabase</a></div><div class="ttdeci">MArgDatabase makeDatabase(const MArgList &amp;args)</div><div class="ttdoc">construct the arg data base from the arguments maya passed to the MPxCommands doIt method...</div></div>
 <div class="ttc" id="classAL_1_1usdmaya_1_1cmds_1_1ProxyShapeFindLoadable_html"><div class="ttname"><a href="classAL_1_1usdmaya_1_1cmds_1_1ProxyShapeFindLoadable.html">AL::usdmaya::cmds::ProxyShapeFindLoadable</a></div><div class="ttdoc">ProxyShapeFindLoadable. </div><div class="ttdef"><b>Definition:</b> ProxyShapeCommands.h:96</div></div>
-<div class="ttc" id="classAL_1_1usdmaya_1_1nodes_1_1SelectionList_html"><div class="ttname"><a href="classAL_1_1usdmaya_1_1nodes_1_1SelectionList.html">AL::usdmaya::nodes::SelectionList</a></div><div class="ttdoc">Used as a way to construct a simple selection list that allows for selection highlighting without cre...</div><div class="ttdef"><b>Definition:</b> ProxyShape.h:102</div></div>
+<div class="ttc" id="classAL_1_1usdmaya_1_1nodes_1_1SelectionList_html"><div class="ttname"><a href="classAL_1_1usdmaya_1_1nodes_1_1SelectionList.html">AL::usdmaya::nodes::SelectionList</a></div><div class="ttdoc">Used as a way to construct a simple selection list that allows for selection highlighting without cre...</div><div class="ttdef"><b>Definition:</b> ProxyShape.h:118</div></div>
 <div class="ttc" id="classAL_1_1usdmaya_1_1cmds_1_1ProxyShapeCommandBase_html_a6d43f3aa4de16c6d5d4fdf50183c1278"><div class="ttname"><a href="classAL_1_1usdmaya_1_1cmds_1_1ProxyShapeCommandBase.html#a6d43f3aa4de16c6d5d4fdf50183c1278">AL::usdmaya::cmds::ProxyShapeCommandBase::setUpCommonSyntax</a></div><div class="ttdeci">static MSyntax setUpCommonSyntax()</div><div class="ttdoc">sets up some core/common command params - enables specification of selectin list as a command argumen...</div></div>
 <div class="ttc" id="classAL_1_1usdmaya_1_1cmds_1_1ProxyShapeImport_html"><div class="ttname"><a href="classAL_1_1usdmaya_1_1cmds_1_1ProxyShapeImport.html">AL::usdmaya::cmds::ProxyShapeImport</a></div><div class="ttdoc">Imports a proxy shape into maya. </div><div class="ttdef"><b>Definition:</b> ProxyShapeCommands.h:76</div></div>
 <div class="ttc" id="classAL_1_1usdmaya_1_1cmds_1_1ProxyShapePrintRefCountState_html"><div class="ttname"><a href="classAL_1_1usdmaya_1_1cmds_1_1ProxyShapePrintRefCountState.html">AL::usdmaya::cmds::ProxyShapePrintRefCountState</a></div><div class="ttdoc">ProxyShapePrintRefCountState. </div><div class="ttdef"><b>Definition:</b> ProxyShapeCommands.h:181</div></div>
@@ -358,7 +359,7 @@ $(document).ready(function(){initNavTree('ProxyShapeCommands_8h_source.html','')
 <div class="ttc" id="classAL_1_1usdmaya_1_1cmds_1_1ProxyShapeCommandBase_html_aa8e96606e8469302ccdb7688310504b1"><div class="ttname"><a href="classAL_1_1usdmaya_1_1cmds_1_1ProxyShapeCommandBase.html#aa8e96606e8469302ccdb7688310504b1">AL::usdmaya::cmds::ProxyShapeCommandBase::getShapeNodeStage</a></div><div class="ttdeci">UsdStageRefPtr getShapeNodeStage(const MArgDatabase &amp;args)</div><div class="ttdoc">get the USD stage </div></div>
 <div class="ttc" id="classAL_1_1usdmaya_1_1cmds_1_1ProxyShapeCommandBase_html"><div class="ttname"><a href="classAL_1_1usdmaya_1_1cmds_1_1ProxyShapeCommandBase.html">AL::usdmaya::cmds::ProxyShapeCommandBase</a></div><div class="ttdoc">Base class for all proxy shape commands. Sets up some common command syntax, along with a few handy u...</div><div class="ttdef"><b>Definition:</b> ProxyShapeCommands.h:42</div></div>
 <div class="ttc" id="classAL_1_1usdmaya_1_1cmds_1_1ProxyShapeImportPrimPathAsMaya_html"><div class="ttname"><a href="classAL_1_1usdmaya_1_1cmds_1_1ProxyShapeImportPrimPathAsMaya.html">AL::usdmaya::cmds::ProxyShapeImportPrimPathAsMaya</a></div><div class="ttdoc">ProxyShapeImportPrimPathAsMaya A command that will import a portion of a proxyNode as Maya geometry/t...</div><div class="ttdef"><b>Definition:</b> ProxyShapeCommands.h:148</div></div>
-<div class="ttc" id="structAL_1_1usdmaya_1_1nodes_1_1SelectionUndoHelper_html"><div class="ttname"><a href="structAL_1_1usdmaya_1_1nodes_1_1SelectionUndoHelper.html">AL::usdmaya::nodes::SelectionUndoHelper</a></div><div class="ttdoc">A helper class to store the state that is modified during a change to the current selection within a ...</div><div class="ttdef"><b>Definition:</b> ProxyShape.h:68</div></div>
+<div class="ttc" id="structAL_1_1usdmaya_1_1nodes_1_1SelectionUndoHelper_html"><div class="ttname"><a href="structAL_1_1usdmaya_1_1nodes_1_1SelectionUndoHelper.html">AL::usdmaya::nodes::SelectionUndoHelper</a></div><div class="ttdoc">A helper class to store the state that is modified during a change to the current selection within a ...</div><div class="ttdef"><b>Definition:</b> ProxyShape.h:81</div></div>
 <div class="ttc" id="classAL_1_1usdmaya_1_1cmds_1_1ProxyShapeCommandBase_html_afdcbfa8236925118d18e5a4c9b51289a"><div class="ttname"><a href="classAL_1_1usdmaya_1_1cmds_1_1ProxyShapeCommandBase.html#afdcbfa8236925118d18e5a4c9b51289a">AL::usdmaya::cmds::ProxyShapeCommandBase::getShapeNode</a></div><div class="ttdeci">nodes::ProxyShape * getShapeNode(const MArgDatabase &amp;args)</div><div class="ttdoc">find the proxy shape nodeata base </div></div>
 <div class="ttc" id="classAL_1_1usdmaya_1_1cmds_1_1ProxyShapeRemoveAllTransforms_html"><div class="ttname"><a href="classAL_1_1usdmaya_1_1cmds_1_1ProxyShapeRemoveAllTransforms.html">AL::usdmaya::cmds::ProxyShapeRemoveAllTransforms</a></div><div class="ttdoc">ProxyShapeRemoveAllTransforms A command that will remove all AL::usdmaya::nodes::Transform nodes from...</div><div class="ttdef"><b>Definition:</b> ProxyShapeCommands.h:130</div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -367,7 +368,7 @@ $(document).ready(function(){initNavTree('ProxyShapeCommands_8h_source.html','')
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_c85d3e3c5052e9ad9ce18c6863244a25.html">lib</a></li><li class="navelem"><a class="el" href="dir_1bb7ef9dbabe305f6710c4d5a2d124d7.html">AL_USDMaya</a></li><li class="navelem"><a class="el" href="dir_1718e17ee0fed015a6dbff620e7e9f68.html">AL</a></li><li class="navelem"><a class="el" href="dir_bfd18ef9f7ca57c4b661440a6abf5ddf.html">usdmaya</a></li><li class="navelem"><a class="el" href="dir_8d68ccc44ba8d1d9e852f698ef625f27.html">cmds</a></li><li class="navelem"><b>ProxyShapeCommands.h</b></li>
-    <li class="footer">Generated on Tue Jan 16 2018 16:47:27 for AL_USDMaya by
+    <li class="footer">Generated on Fri Feb 9 2018 18:12:36 for AL_USDMaya by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

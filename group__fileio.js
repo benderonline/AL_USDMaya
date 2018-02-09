@@ -6,7 +6,10 @@ var group__fileio =
       [ "addPlug", "structAL_1_1usdmaya_1_1fileio_1_1AnimationTranslator.html#ae0bb17ec491ecf7a829ba105befbaec2", null ],
       [ "addPlug", "structAL_1_1usdmaya_1_1fileio_1_1AnimationTranslator.html#a2c8c050252f8a39de23b99e6b37f1ff6", null ],
       [ "addTransformPlug", "structAL_1_1usdmaya_1_1fileio_1_1AnimationTranslator.html#ae89fb6a97c4abda37b49370b10b9d1fb", null ],
-      [ "exportAnimation", "structAL_1_1usdmaya_1_1fileio_1_1AnimationTranslator.html#a0eacfd4908b4164d1c09daf9cb6700bc", null ]
+      [ "exportAnimation", "structAL_1_1usdmaya_1_1fileio_1_1AnimationTranslator.html#a0eacfd4908b4164d1c09daf9cb6700bc", null ],
+      [ "forceAddPlug", "structAL_1_1usdmaya_1_1fileio_1_1AnimationTranslator.html#ae2d1e88755fd90ca04e0149022eca509", null ],
+      [ "forceAddPlug", "structAL_1_1usdmaya_1_1fileio_1_1AnimationTranslator.html#a61873b94c928402447a65258706ab1af", null ],
+      [ "forceAddTransformPlug", "structAL_1_1usdmaya_1_1fileio_1_1AnimationTranslator.html#a606c61c7fd74c4c03ec742315d3c484d", null ]
     ] ],
     [ "Export", "classAL_1_1usdmaya_1_1fileio_1_1Export.html", [
       [ "Export", "classAL_1_1usdmaya_1_1fileio_1_1Export.html#acfbe335ee413f1de583f74bd7523ef87", null ],
@@ -80,7 +83,7 @@ var group__fileio =
       [ "prim", "classAL_1_1usdmaya_1_1fileio_1_1TransformIterator.html#a49410382866f3ba3ed8f4193c00d1dee", null ],
       [ "prune", "classAL_1_1usdmaya_1_1fileio_1_1TransformIterator.html#ab0e11b681e38415d19b1da6f69eadaf6", null ]
     ] ],
-    [ "AL_MAYA_TRANSLATOR_BEGIN", "group__fileio.html#ga3f4e20a894b3571940ae1d0e590e52bd", null ],
+    [ "AL_MAYA_TRANSLATOR_BEGIN", "group__fileio.html#ga899e46e521f9fcf6960e75e812b5a0bd", null ],
     [ "AL_MAYA_TRANSLATOR_BEGIN", "group__fileio.html#ga046eca293f9dd3ec6b29c5a40811a178", null ],
     [ "importSchemaPrim", "group__fileio.html#ga96e04f9d167f995329de19b59950a542", null ],
     [ "isSchemaOfType", "group__fileio.html#ga46452970b3b1a6e94145b67d0bb77436", null ]
